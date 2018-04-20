@@ -38,6 +38,7 @@
         _collectonView.delegate = self;
         _collectonView.dataSource = self;
         _collectonView.pagingEnabled = true;
+        _collectonView.showsHorizontalScrollIndicator = false;
         [self addSubview:_collectonView];
         
         [_collectonView registerNib:[UINib nibWithNibName:@"TBImageCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"image"];

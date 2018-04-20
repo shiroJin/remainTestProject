@@ -9,6 +9,7 @@
 #import "ScrollTestViewController.h"
 #import "SCScrollView.h"
 #import "TBScrollView.h"
+#import "TBTableViewCell.h"
 
 #define videoPackage(video, shot) \
 ({SCScrollVideoModel *model = [[SCScrollVideoModel alloc] init]; \
@@ -17,7 +18,9 @@ model.videoURL = video; \
 model; \
 })
 
-@interface ScrollTestViewController ()
+@interface ScrollTestViewController () <UITableViewDelegate, UITableViewDataSource>
+
+@property (strong, nonatomic) UITableView *tableView;
 
 @end
 
@@ -29,6 +32,7 @@ model; \
     self.view.backgroundColor = [UIColor whiteColor];
     
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
+    CGFloat height = [UIScreen mainScreen].bounds.size.height - 20;
     NSArray *pics = @[@"http://cc.cocimg.com/api/uploads/180417/8821e2c1bfedd7367d4e79ec261f833a.png",
                       @"http://cc.cocimg.com/api/uploads/180417/abb4e0df2034b8d26d5e1b9bf57b7eb3.png",
                       @"http://cc.cocimg.com/api/uploads/180418/00ade475e9bfc14239ab989bc80dbf41.png",
@@ -36,8 +40,24 @@ model; \
     NSArray *videos = @[videoPackage(@"http://svideo.spriteapp.com/video/2018/0417/9ffc405e41fd11e8a871842b2b4c75ab_wpd.mp4", @"http://cc.cocimg.com/api/uploads/180417/8821e2c1bfedd7367d4e79ec261f833a.png")];
     SCScrollModel *model = [[SCScrollModel alloc] initWithVideoList:videos images:pics];
     
-    TBScrollView *scrollView = [[TBScrollView alloc] initWithFrame:CGRectMake(0, 20, width, 200) dataModel:model];
-    [self.view addSubview:scrollView];
+//    TBScrollView *scrollView = [[TBScrollView alloc] initWithFrame:CGRectMake(0, 20, width, 200) dataModel:model];
+//    [self.view addSubview:scrollView];
+    
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 200, width, height)];
+    [self.view addSubview:_tableView];
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+    [_tableView registerNib:[UINib nibWithNibName:@"TBTableViewCell" bundle:nil] forCellReuseIdentifier:@"cell"];
+    _tableView.rowHeight = 200;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    TBTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning {

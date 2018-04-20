@@ -55,6 +55,8 @@
 		3B7DC8C62088976400CEEC5E /* ASValueTrackingSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC8B52088976400CEEC5E /* ASValueTrackingSlider.m */; };
 		3B7DC8C72088976400CEEC5E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3B7DC8B62088976400CEEC5E /* README.md */; };
 		3B7DC8CA2089BD5100CEEC5E /* TBVideoControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC8C92089BD5100CEEC5E /* TBVideoControlView.m */; };
+		3B7DC8CE2089EDB300CEEC5E /* TBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC8CC2089EDB300CEEC5E /* TBTableViewCell.m */; };
+		3B7DC8CF2089EDB300CEEC5E /* TBTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B7DC8CD2089EDB300CEEC5E /* TBTableViewCell.xib */; };
 		3BD860152074B7C9004E9321 /* Promise.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD860142074B7C9004E9321 /* Promise.m */; };
 		3BE0C07B205271870051D3FC /* UITableView+EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C07A205271870051D3FC /* UITableView+EmptyView.m */; };
 		8F8BCE736634BA645FE95673 /* libPods-TestProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4080F506B0DBFD39BF926BFC /* libPods-TestProject.a */; };
@@ -173,6 +175,9 @@
 		3B7DC8B62088976400CEEC5E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3B7DC8C82089BD5100CEEC5E /* TBVideoControlView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBVideoControlView.h; sourceTree = "<group>"; };
 		3B7DC8C92089BD5100CEEC5E /* TBVideoControlView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBVideoControlView.m; sourceTree = "<group>"; };
+		3B7DC8CB2089EDB300CEEC5E /* TBTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBTableViewCell.h; sourceTree = "<group>"; };
+		3B7DC8CC2089EDB300CEEC5E /* TBTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBTableViewCell.m; sourceTree = "<group>"; };
+		3B7DC8CD2089EDB300CEEC5E /* TBTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TBTableViewCell.xib; sourceTree = "<group>"; };
 		3BD860132074B7C9004E9321 /* Promise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Promise.h; sourceTree = "<group>"; };
 		3BD860142074B7C9004E9321 /* Promise.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Promise.m; sourceTree = "<group>"; };
 		3BE0C079205271870051D3FC /* UITableView+EmptyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+EmptyView.h"; sourceTree = "<group>"; };
@@ -325,6 +330,9 @@
 				3B7DC8742088910000CEEC5E /* Utils */,
 				224C0B5C2088C62600A64EDE /* ScrollTestViewController.h */,
 				224C0B5D2088C62600A64EDE /* ScrollTestViewController.m */,
+				3B7DC8CB2089EDB300CEEC5E /* TBTableViewCell.h */,
+				3B7DC8CC2089EDB300CEEC5E /* TBTableViewCell.m */,
+				3B7DC8CD2089EDB300CEEC5E /* TBTableViewCell.xib */,
 			);
 			path = SCScrollView;
 			sourceTree = "<group>";
@@ -574,6 +582,7 @@
 				3B520F26204F7380008281E5 /* Assets.xcassets in Resources */,
 				224C0B632088E3E500A64EDE /* TBVideoCollectionViewCell.xib in Resources */,
 				3B7DC8B72088976400CEEC5E /* LICENSE in Resources */,
+				3B7DC8CF2089EDB300CEEC5E /* TBTableViewCell.xib in Resources */,
 				3B7DC8722088876200CEEC5E /* TBImageCollectionViewCell.xib in Resources */,
 				3B7DC8C12088976400CEEC5E /* ZFPlayer.bundle in Resources */,
 			);
@@ -662,6 +671,7 @@
 				3B7DC8712088876200CEEC5E /* TBImageCollectionViewCell.m in Sources */,
 				3B7DC8872088911B00CEEC5E /* SDCollectionViewCell.m in Sources */,
 				3B7DC76E208733B900CEEC5E /* ScrollTableViewCell.m in Sources */,
+				3B7DC8CE2089EDB300CEEC5E /* TBTableViewCell.m in Sources */,
 				3BE0C07B205271870051D3FC /* UITableView+EmptyView.m in Sources */,
 				3B7DC8BB2088976400CEEC5E /* UIView+CustomControlView.m in Sources */,
 				3B7DC892208893F200CEEC5E /* SCScrollModel.m in Sources */,
