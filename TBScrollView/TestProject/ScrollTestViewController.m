@@ -24,7 +24,9 @@ model; \
 
 @end
 
-@implementation ScrollTestViewController
+@implementation ScrollTestViewController {
+    dispatch_queue_t serialQueue;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -45,6 +47,13 @@ model; \
     
 //    TBScrollView *scrollView = [[TBScrollView alloc] initWithFrame:CGRectMake(0, 20, width, 200) dataModel:self.model];
 //    [self.view addSubview:scrollView];
+    
+    serialQueue = dispatch_queue_create("serial_queue", DISPATCH_QUEUE_SERIAL);
+    
+    
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSLog(@"%@\n%@", [NSThread mainThread], [NSThread currentThread]);
+    });
 }
 
 - (SCScrollModel *)model {
@@ -52,7 +61,8 @@ model; \
                       @"http://cc.cocimg.com/api/uploads/180417/abb4e0df2034b8d26d5e1b9bf57b7eb3.png",
                       @"http://cc.cocimg.com/api/uploads/180418/00ade475e9bfc14239ab989bc80dbf41.png",
                       @"http://cc.cocimg.com/api/uploads/180419/ec713d121c36b934de1aaffa2c4ff025.png"];
-    NSArray *videos = @[videoPackage(@"http://svideo.spriteapp.com/video/2018/0417/9ffc405e41fd11e8a871842b2b4c75ab_wpd.mp4", @"http://cc.cocimg.com/api/uploads/180417/8821e2c1bfedd7367d4e79ec261f833a.png")];
+    NSArray *videos = @[videoPackage(@"http://svideo.spriteapp.com/video/2018/0417/9ffc405e41fd11e8a871842b2b4c75ab_wpd.mp4",
+                                     @"http://cc.cocimg.com/api/uploads/180417/8821e2c1bfedd7367d4e79ec261f833a.png")];
     SCScrollModel *model = [[SCScrollModel alloc] initWithVideoList:videos images:pics];
     return model;
 }

@@ -47,7 +47,7 @@
     }
     
     if (index == 0 && _scrollPaused) {
-//        [_player play];
+        [_player play];
         _scrollPaused = false;
     }
 }
@@ -78,11 +78,9 @@
             TBVideoCollectionViewCell *videoCell = (TBVideoCollectionViewCell *)cell;
             ZFPlayerView *player = videoCell.player;
             ZFPlayerState state = player.state;
-            if (state == ZFPlayerStatePause) {
-                [player play];
-            } else if (state == ZFPlayerStateFailed) {
-                [player autoPlayTheVideo];
-            } else if (state == ZFPlayerStatePlaying) {
+            if (state != ZFPlayerStatePlaying) {
+                [self playVideo:player];
+            } else {
                 if (!self.isFullScreen) {
                     [self enterFullScreenMode];
                 } else {
@@ -139,6 +137,30 @@
     }
     
     self.cancelBtn.hidden = true;
+}
+
+- (void)playVideo:(ZFPlayerView *)player {
+    for (UIGestureRecognizer *gesture in player.gestureRecognizers) {
+        if ([gesture isKindOfClass:[UIPanGestureRecognizer class]]) {
+            gesture.enabled = false;
+        }
+    }
+    
+    if (player.state == ZFPlayerStatePause) {
+        [player play];
+    } else {
+        [player autoPlayTheVideo];
+    }
+}
+
+- (void)pauseVideo:(ZFPlayerView *)player {
+    for (UIGestureRecognizer *gesture in player.gestureRecognizers) {
+        if ([gesture isKindOfClass:[UIPanGestureRecognizer class]]) {
+            gesture.enabled = true;
+        }
+    }
+
+    [player pause];
 }
 
 #pragma mark - Access
