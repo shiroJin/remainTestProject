@@ -14,9 +14,12 @@
 
 @property (nonatomic, strong) UICollectionView *collectonView;
 @property (nonatomic, strong) UICollectionViewFlowLayout *flowLayout;
-@property (nonatomic, assign) CGRect originRect;
 @property (nonatomic, assign, getter=isFullScreen) BOOL fullScreen;
 @property (nonatomic, strong) UIButton *cancelBtn;
+@property (nonatomic, assign) UIView *originSuperview;
+@property (nonatomic, assign) CGRect originFrame;
+@property (nonatomic, weak) ZFPlayerView *player;
+@property (nonatomic, assign, getter=isScrollPause) BOOL scrollPaused;
 
 @end
 
@@ -25,29 +28,29 @@
 - (instancetype)initWithFrame:(CGRect)frame dataModel:(SCScrollModel *)model {
     if (self = [self initWithFrame:frame]) {
         _model = model;
-        _originRect = frame;
         _fullScreen = false;
         
-        _flowLayout = [[UICollectionViewFlowLayout alloc] init];
-        _flowLayout.itemSize = frame.size;
-        _flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-        _flowLayout.minimumInteritemSpacing = 0.0f;
-        _flowLayout.minimumLineSpacing = 0.0f;
-        
-        _collectonView = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:_flowLayout];
-        _collectonView.delegate = self;
-        _collectonView.dataSource = self;
-        _collectonView.pagingEnabled = true;
-        _collectonView.showsHorizontalScrollIndicator = false;
-        [self addSubview:_collectonView];
-        
-        [_collectonView registerNib:[UINib nibWithNibName:@"TBImageCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"image"];
-        [_collectonView registerNib:[UINib nibWithNibName:@"TBVideoCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"video"];
+        [self.collectonView reloadData];
     }
     return self;
 }
 
 #pragma mark - Collection View
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    CGFloat offset = scrollView.contentOffset.x;
+    int index = offset / scrollView.frame.size.width;
+    
+    if (index >= 1 && _player.state == ZFPlayerStatePlaying) {
+        [_player pause];
+        _scrollPaused = true;
+    }
+    
+    if (index == 0 && _scrollPaused) {
+//        [_player play];
+        _scrollPaused = false;
+    }
+}
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.model.flatMap.count;
@@ -58,16 +61,14 @@
         TBVideoCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"video" forIndexPath:indexPath];
         [cell setVideoModel:_model.videoList[indexPath.row]];
         cell.fullScreen = self.isFullScreen;
+        // 设置播放器，划出可视区域后自动暂停。
+        self.player = cell.player;
         return cell;
     } else {
         TBImageCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"image" forIndexPath:indexPath];
         [cell setImage:_model.flatMap[indexPath.row]];
         return cell;
     }
-}
-
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -84,6 +85,8 @@
             } else if (state == ZFPlayerStatePlaying) {
                 if (!self.isFullScreen) {
                     [self enterFullScreenMode];
+                } else {
+                    [self exitFullScreenMode];
                 }
             }
         }
@@ -100,13 +103,14 @@
 
 - (void)enterFullScreenMode {
     _fullScreen = true;
-    self.backgroundColor = [UIColor blackColor];
+    _originFrame = self.frame;
 
+    _originSuperview = self.superview;
+    [self removeFromSuperview];
+    
     CGRect fullScreenRect = [UIApplication sharedApplication].keyWindow.bounds;
-    CGSize itemSize = fullScreenRect.size;
+    [[UIApplication sharedApplication].keyWindow addSubview:self];
     [self setFrame:fullScreenRect];
-    [self.flowLayout setItemSize:itemSize];
-    [self.collectonView setFrame:fullScreenRect];
     
     NSArray *visibleCells = [_collectonView visibleCells];
     for (UITableViewCell *cell in visibleCells) {
@@ -115,6 +119,7 @@
         }
     }
     
+    self.backgroundColor = [UIColor blackColor];
     self.cancelBtn.hidden = false;
 }
 
@@ -122,10 +127,9 @@
     _fullScreen = false;
     self.backgroundColor = [UIColor whiteColor];
     
-    CGRect originBounds = (CGRect){CGPointZero, _originRect.size};
-    [self setFrame:_originRect];
-    _flowLayout.itemSize = originBounds.size;
-    [_collectonView setFrame:originBounds];
+    [self removeFromSuperview];
+    [_originSuperview addSubview:self];
+    [self setFrame:self.originFrame];
     
     NSArray *visibleCells = [_collectonView visibleCells];
     for (UITableViewCell *cell in visibleCells) {
@@ -138,6 +142,17 @@
 }
 
 #pragma mark - Access
+
+- (void)setModel:(SCScrollModel *)model {
+    _model = model;
+    [_collectonView reloadData];
+}
+
+- (void)setFrame:(CGRect)frame {
+    [super setFrame:frame];
+    self.flowLayout.itemSize = frame.size;
+    self.collectonView.frame = (CGRect){CGPointZero, frame.size};
+}
 
 - (UIButton *)cancelBtn {
     if (!_cancelBtn) {
@@ -153,6 +168,34 @@
         _cancelBtn.hidden = true;
     }
     return _cancelBtn;
+}
+
+- (UICollectionView *)collectonView {
+    if (!_collectonView) {
+        _collectonView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:self.flowLayout];
+        _collectonView.delegate = self;
+        _collectonView.dataSource = self;
+        _collectonView.pagingEnabled = true;
+        _collectonView.showsHorizontalScrollIndicator = false;
+        if (@available(iOS 11, *)) {
+            _collectonView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        }
+        [self addSubview:_collectonView];
+        
+        [_collectonView registerNib:[UINib nibWithNibName:@"TBImageCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"image"];
+        [_collectonView registerNib:[UINib nibWithNibName:@"TBVideoCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"video"];
+    }
+    return _collectonView;
+}
+
+- (UICollectionViewFlowLayout *)flowLayout {
+    if (!_flowLayout) {
+        _flowLayout = [[UICollectionViewFlowLayout alloc] init];
+        _flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+        _flowLayout.minimumInteritemSpacing = 0.0f;
+        _flowLayout.minimumLineSpacing = 0.0f;
+    }
+    return _flowLayout;
 }
 
 /*

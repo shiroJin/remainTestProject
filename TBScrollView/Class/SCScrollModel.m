@@ -24,7 +24,7 @@
 - (NSArray *)flatMap {
     NSMutableArray *list = [NSMutableArray array];
     for (SCScrollVideoModel *video in self.videoList) {
-        [list addObject:video.shotImageURL];
+        [list addObject:video.coverURLString];
     }
     
     [list addObjectsFromArray:self.imageList];

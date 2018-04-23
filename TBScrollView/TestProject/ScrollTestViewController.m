@@ -13,8 +13,8 @@
 
 #define videoPackage(video, shot) \
 ({SCScrollVideoModel *model = [[SCScrollVideoModel alloc] init]; \
-model.shotImageURL = shot; \
-model.videoURL = video; \
+model.coverURLString = shot; \
+model.videoURLString = video; \
 model; \
 })
 
@@ -33,22 +33,28 @@ model; \
     
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
     CGFloat height = [UIScreen mainScreen].bounds.size.height - 20;
+    
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 20, width, height)];
+    [self.view addSubview:_tableView];
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+//    [_tableView registerNib:[UINib nibWithNibName:@"TBTableViewCell" bundle:nil] forCellReuseIdentifier:@"cell"];
+    [_tableView registerClass:[TBTableViewCell class] forCellReuseIdentifier:@"cell"];
+    _tableView.rowHeight = 200;
+    _tableView.backgroundColor = [UIColor greenColor];
+    
+//    TBScrollView *scrollView = [[TBScrollView alloc] initWithFrame:CGRectMake(0, 20, width, 200) dataModel:self.model];
+//    [self.view addSubview:scrollView];
+}
+
+- (SCScrollModel *)model {
     NSArray *pics = @[@"http://cc.cocimg.com/api/uploads/180417/8821e2c1bfedd7367d4e79ec261f833a.png",
                       @"http://cc.cocimg.com/api/uploads/180417/abb4e0df2034b8d26d5e1b9bf57b7eb3.png",
                       @"http://cc.cocimg.com/api/uploads/180418/00ade475e9bfc14239ab989bc80dbf41.png",
                       @"http://cc.cocimg.com/api/uploads/180419/ec713d121c36b934de1aaffa2c4ff025.png"];
     NSArray *videos = @[videoPackage(@"http://svideo.spriteapp.com/video/2018/0417/9ffc405e41fd11e8a871842b2b4c75ab_wpd.mp4", @"http://cc.cocimg.com/api/uploads/180417/8821e2c1bfedd7367d4e79ec261f833a.png")];
     SCScrollModel *model = [[SCScrollModel alloc] initWithVideoList:videos images:pics];
-    
-//    TBScrollView *scrollView = [[TBScrollView alloc] initWithFrame:CGRectMake(0, 20, width, 200) dataModel:model];
-//    [self.view addSubview:scrollView];
-    
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 200, width, height)];
-    [self.view addSubview:_tableView];
-    _tableView.delegate = self;
-    _tableView.dataSource = self;
-    [_tableView registerNib:[UINib nibWithNibName:@"TBTableViewCell" bundle:nil] forCellReuseIdentifier:@"cell"];
-    _tableView.rowHeight = 200;
+    return model;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -57,6 +63,7 @@ model; \
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TBTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    cell.scrollView.model = self.model;
     return cell;
 }
 

@@ -29,9 +29,9 @@
     if (_videoModel != videoModel) {
         _videoModel = videoModel;
         ZFPlayerModel *model = [[ZFPlayerModel alloc] init];
-        model.videoURL = [NSURL URLWithString:videoModel.videoURL];
+        model.videoURL = [NSURL URLWithString:videoModel.videoURLString];
         model.fatherView = self.contentView;
-        model.placeholderImageURLString = videoModel.shotImageURL;
+        model.placeholderImageURLString = videoModel.coverURLString;
         
         [_player playerControlView:[TBVideoControlView new] playerModel:model];
     }

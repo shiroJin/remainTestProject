@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TBScrollView.h"
 
 @interface TBTableViewCell : UITableViewCell
 

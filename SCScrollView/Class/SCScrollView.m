@@ -58,7 +58,7 @@
 - (void)videoAction:(NSInteger)index {
     if (self.player.state != ZFPlayerStatePlaying) {
         ZFPlayerModel *playerModel = [[ZFPlayerModel alloc] init];
-        playerModel.videoURL = [NSURL URLWithString:[_dataModel.videoList[index] videoURL]];
+        playerModel.videoURL = [NSURL URLWithString:[_dataModel.videoList[index] videoURLString]];
         playerModel.scrollView = [_cycleScrollView valueForKey:@"mainView"];
         playerModel.indexPath = [NSIndexPath indexPathForRow:index inSection:0];
         playerModel.fatherViewTag = 100;

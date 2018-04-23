@@ -10,10 +10,12 @@
 
 @interface SCScrollVideoModel : NSObject
 
-@property (copy, nonatomic) NSString *shotImageURL;
-@property (copy, nonatomic) NSString *videoURL;
+@property (copy, nonatomic) NSString *coverURLString;
+
+@property (copy, nonatomic) NSString *videoURLString;
 
 @end
+
 
 @interface SCScrollModel : NSObject
 

@@ -7,10 +7,8 @@
 //
 
 #import "TBTableViewCell.h"
-#import "TBScrollView.h"
 
 @interface TBTableViewCell ()
-
 
 @end
 
@@ -25,6 +23,19 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+- (void)drawRect:(CGRect)rect {
+    self.scrollView.frame = (CGRect){CGPointZero, rect.size};
+}
+
+- (TBScrollView *)scrollView {
+    if (!_scrollView) {
+        TBScrollView *scrollView = [[TBScrollView alloc] init];
+        _scrollView = scrollView;
+        [self addSubview:_scrollView];
+    }
+    return _scrollView;
 }
 
 @end

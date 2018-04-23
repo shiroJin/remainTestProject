@@ -309,16 +309,9 @@
 		3B7DC86420887B1800CEEC5E /* TBScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				3B7DC86520887B3400CEEC5E /* TBScrollView.h */,
-				3B7DC86620887B3400CEEC5E /* TBScrollView.m */,
-				3B7DC86E2088876200CEEC5E /* TBImageCollectionViewCell.h */,
-				3B7DC86F2088876200CEEC5E /* TBImageCollectionViewCell.m */,
-				3B7DC8702088876200CEEC5E /* TBImageCollectionViewCell.xib */,
-				224C0B5F2088E3E500A64EDE /* TBVideoCollectionViewCell.h */,
-				224C0B602088E3E500A64EDE /* TBVideoCollectionViewCell.m */,
-				224C0B612088E3E500A64EDE /* TBVideoCollectionViewCell.xib */,
-				3B7DC8C82089BD5100CEEC5E /* TBVideoControlView.h */,
-				3B7DC8C92089BD5100CEEC5E /* TBVideoControlView.m */,
+				3B7DC8D0208D86E200CEEC5E /* Class */,
+				3B7DC8D1208D86F000CEEC5E /* Utils */,
+				3B7DC8D3208D870C00CEEC5E /* TestProject */,
 			);
 			path = TBScrollView;
 			sourceTree = "<group>";
@@ -328,11 +321,6 @@
 			children = (
 				3B7DC88C208892D800CEEC5E /* Class */,
 				3B7DC8742088910000CEEC5E /* Utils */,
-				224C0B5C2088C62600A64EDE /* ScrollTestViewController.h */,
-				224C0B5D2088C62600A64EDE /* ScrollTestViewController.m */,
-				3B7DC8CB2089EDB300CEEC5E /* TBTableViewCell.h */,
-				3B7DC8CC2089EDB300CEEC5E /* TBTableViewCell.m */,
-				3B7DC8CD2089EDB300CEEC5E /* TBTableViewCell.xib */,
 			);
 			path = SCScrollView;
 			sourceTree = "<group>";
@@ -340,7 +328,6 @@
 		3B7DC8742088910000CEEC5E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				3B7DC8932088976400CEEC5E /* ZFPlayer */,
 				3B7DC8752088911B00CEEC5E /* SDCycleScrollView */,
 			);
 			path = Utils;
@@ -380,8 +367,6 @@
 			children = (
 				3B7DC88D208892EB00CEEC5E /* SCScrollView.h */,
 				3B7DC88E208892EB00CEEC5E /* SCScrollView.m */,
-				3B7DC890208893F200CEEC5E /* SCScrollModel.h */,
-				3B7DC891208893F200CEEC5E /* SCScrollModel.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -440,6 +425,45 @@
 				3B7DC8A82088976400CEEC5E /* UIViewController+ZFPlayerRotation.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		3B7DC8D0208D86E200CEEC5E /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				3B7DC890208893F200CEEC5E /* SCScrollModel.h */,
+				3B7DC891208893F200CEEC5E /* SCScrollModel.m */,
+				3B7DC86520887B3400CEEC5E /* TBScrollView.h */,
+				3B7DC86620887B3400CEEC5E /* TBScrollView.m */,
+				3B7DC86E2088876200CEEC5E /* TBImageCollectionViewCell.h */,
+				3B7DC86F2088876200CEEC5E /* TBImageCollectionViewCell.m */,
+				3B7DC8702088876200CEEC5E /* TBImageCollectionViewCell.xib */,
+				224C0B5F2088E3E500A64EDE /* TBVideoCollectionViewCell.h */,
+				224C0B602088E3E500A64EDE /* TBVideoCollectionViewCell.m */,
+				224C0B612088E3E500A64EDE /* TBVideoCollectionViewCell.xib */,
+				3B7DC8C82089BD5100CEEC5E /* TBVideoControlView.h */,
+				3B7DC8C92089BD5100CEEC5E /* TBVideoControlView.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		3B7DC8D1208D86F000CEEC5E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3B7DC8932088976400CEEC5E /* ZFPlayer */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3B7DC8D3208D870C00CEEC5E /* TestProject */ = {
+			isa = PBXGroup;
+			children = (
+				224C0B5C2088C62600A64EDE /* ScrollTestViewController.h */,
+				224C0B5D2088C62600A64EDE /* ScrollTestViewController.m */,
+				3B7DC8CB2089EDB300CEEC5E /* TBTableViewCell.h */,
+				3B7DC8CC2089EDB300CEEC5E /* TBTableViewCell.m */,
+				3B7DC8CD2089EDB300CEEC5E /* TBTableViewCell.xib */,
+			);
+			path = TestProject;
 			sourceTree = "<group>";
 		};
 		3BD860122074B7AD004E9321 /* Promise */ = {
