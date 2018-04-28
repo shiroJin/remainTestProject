@@ -28,6 +28,7 @@
 - (void)setVideoModel:(SCScrollVideoModel *)videoModel {
     if (_videoModel != videoModel) {
         _videoModel = videoModel;
+        
         ZFPlayerModel *model = [[ZFPlayerModel alloc] init];
         model.videoURL = [NSURL URLWithString:videoModel.videoURLString];
         model.fatherView = self.contentView;

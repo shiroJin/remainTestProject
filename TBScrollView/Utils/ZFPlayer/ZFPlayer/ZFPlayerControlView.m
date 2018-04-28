@@ -843,6 +843,7 @@ static const CGFloat ZFPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
     if (!_placeholderImageView) {
         _placeholderImageView = [[UIImageView alloc] init];
         _placeholderImageView.userInteractionEnabled = YES;
+        _placeholderImageView.contentMode = UIViewContentModeScaleAspectFit;
     }
     return _placeholderImageView;
 }

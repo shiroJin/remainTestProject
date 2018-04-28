@@ -10,6 +10,7 @@
 #import "ViewController.h"
 #import "ScrollViewController.h"
 #import "ScrollTestViewController.h"
+#import "TestProject-Swift.h"
 
 @interface AppDelegate ()
 

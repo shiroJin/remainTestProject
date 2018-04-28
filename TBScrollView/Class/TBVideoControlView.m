@@ -368,8 +368,14 @@ static const CGFloat ZFPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
 
 - (void)playBtnClick:(UIButton *)sender {
     sender.selected = !sender.selected;
-    if ([self.delegate respondsToSelector:@selector(zf_controlView:playAction:)]) {
-        [self.delegate zf_controlView:self playAction:sender];
+    if (self.playeEnd) {
+        if (self.delegate && [self.delegate respondsToSelector:@selector(zf_controlView:repeatPlayAction:)]) {
+            [self.delegate zf_controlView:self repeatPlayAction:sender];
+        }
+    } else {
+        if ([self.delegate respondsToSelector:@selector(zf_controlView:playAction:)]) {
+            [self.delegate zf_controlView:self playAction:sender];
+        }
     }
 }
 
@@ -456,12 +462,14 @@ static const CGFloat ZFPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
 }
 
 - (void)playerPlayDidEnd {
-    self.backgroundColor  = RGBA(0, 0, 0, .6);
-    self.repeatBtn.hidden = NO;
-    // 初始化显示controlView为YES
-    self.showing = NO;
-    // 延迟隐藏controlView
-    [self zf_playerShowControlView];
+//    self.backgroundColor  = RGBA(0, 0, 0, .6);
+//    self.repeatBtn.hidden = NO;
+//    // 初始化显示controlView为YES
+//    self.showing = NO;
+//    // 延迟隐藏controlView
+//    [self zf_playerShowControlView];
+    
+    [self zf_playerResetControlView];
 }
 
 /**
@@ -828,6 +836,7 @@ static const CGFloat ZFPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
     if (!_placeholderImageView) {
         _placeholderImageView = [[UIImageView alloc] init];
         _placeholderImageView.userInteractionEnabled = YES;
+        _placeholderImageView.contentMode = UIViewContentModeScaleAspectFit;
     }
     return _placeholderImageView;
 }
@@ -1078,6 +1087,7 @@ static const CGFloat ZFPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
     self.backgroundColor  = RGBA(0, 0, 0, .3);
     ZFPlayerShared.isStatusBarHidden = NO;
     self.bottomProgressView.alpha = 0;
+//    [self zf_playerResetControlView];
 }
 
 /**

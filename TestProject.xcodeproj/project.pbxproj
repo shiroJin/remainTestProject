@@ -35,7 +35,6 @@
 		3B7DC8892088911B00CEEC5E /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC87F2088911B00CEEC5E /* TAPageControl.m */; };
 		3B7DC88A2088911B00CEEC5E /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC8802088911B00CEEC5E /* TAAnimatedDotView.m */; };
 		3B7DC88B2088911B00CEEC5E /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC8812088911B00CEEC5E /* TAAbstractDotView.m */; };
-		3B7DC88F208892EB00CEEC5E /* SCScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC88E208892EB00CEEC5E /* SCScrollView.m */; };
 		3B7DC892208893F200CEEC5E /* SCScrollModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC891208893F200CEEC5E /* SCScrollModel.m */; };
 		3B7DC8B72088976400CEEC5E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3B7DC8942088976400CEEC5E /* LICENSE */; };
 		3B7DC8B82088976400CEEC5E /* ZFPlayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC8962088976400CEEC5E /* ZFPlayerModel.m */; };
@@ -59,7 +58,9 @@
 		3B7DC8CF2089EDB300CEEC5E /* TBTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B7DC8CD2089EDB300CEEC5E /* TBTableViewCell.xib */; };
 		3BD860152074B7C9004E9321 /* Promise.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD860142074B7C9004E9321 /* Promise.m */; };
 		3BE0C07B205271870051D3FC /* UITableView+EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C07A205271870051D3FC /* UITableView+EmptyView.m */; };
-		8F8BCE736634BA645FE95673 /* libPods-TestProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4080F506B0DBFD39BF926BFC /* libPods-TestProject.a */; };
+		3BFD78662092C77C00143C9F /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD78642092C77C00143C9F /* SwiftViewController.swift */; };
+		3BFD78672092C77C00143C9F /* SwiftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BFD78652092C77C00143C9F /* SwiftViewController.xib */; };
+		99509D4652E306EEB3B57D52 /* Pods_TestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74E33408DEC93B1D3B85A37 /* Pods_TestProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,8 +137,6 @@
 		3B7DC8822088911B00CEEC5E /* TADotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADotView.h; sourceTree = "<group>"; };
 		3B7DC8832088911B00CEEC5E /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
 		3B7DC8842088911B00CEEC5E /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
-		3B7DC88D208892EB00CEEC5E /* SCScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCScrollView.h; sourceTree = "<group>"; };
-		3B7DC88E208892EB00CEEC5E /* SCScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCScrollView.m; sourceTree = "<group>"; };
 		3B7DC890208893F200CEEC5E /* SCScrollModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCScrollModel.h; sourceTree = "<group>"; };
 		3B7DC891208893F200CEEC5E /* SCScrollModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCScrollModel.m; sourceTree = "<group>"; };
 		3B7DC8942088976400CEEC5E /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -182,9 +181,12 @@
 		3BD860142074B7C9004E9321 /* Promise.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Promise.m; sourceTree = "<group>"; };
 		3BE0C079205271870051D3FC /* UITableView+EmptyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+EmptyView.h"; sourceTree = "<group>"; };
 		3BE0C07A205271870051D3FC /* UITableView+EmptyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+EmptyView.m"; sourceTree = "<group>"; };
-		4080F506B0DBFD39BF926BFC /* libPods-TestProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BFD78632092C77C00143C9F /* TestProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		3BFD78642092C77C00143C9F /* SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
+		3BFD78652092C77C00143C9F /* SwiftViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwiftViewController.xib; sourceTree = "<group>"; };
 		4443DE576C7BB525641756C1 /* Pods-TestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestProject/Pods-TestProject.debug.xcconfig"; sourceTree = "<group>"; };
 		BD9796C37F535E9ACD5E2EB5 /* Pods-TestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestProject/Pods-TestProject.release.xcconfig"; sourceTree = "<group>"; };
+		F74E33408DEC93B1D3B85A37 /* Pods_TestProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,7 +194,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F8BCE736634BA645FE95673 /* libPods-TestProject.a in Frameworks */,
+				99509D4652E306EEB3B57D52 /* Pods_TestProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +218,7 @@
 		3B520F10204F7380008281E5 = {
 			isa = PBXGroup;
 			children = (
-				3B7DC873208890F100CEEC5E /* SCScrollView */,
+				3BFD78622092C73F00143C9F /* Swift_mix */,
 				3B7DC86420887B1800CEEC5E /* TBScrollView */,
 				3B7DC7702087340800CEEC5E /* Utils */,
 				3B7DC767208732BE00CEEC5E /* ScrollAdvance */,
@@ -300,6 +302,7 @@
 		3B7DC7702087340800CEEC5E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				3B7DC8752088911B00CEEC5E /* SDCycleScrollView */,
 				3B7DC7712087342800CEEC5E /* FPSLabel.h */,
 				3B7DC7722087342800CEEC5E /* FPSLabel.m */,
 			);
@@ -314,23 +317,6 @@
 				3B7DC8D3208D870C00CEEC5E /* TestProject */,
 			);
 			path = TBScrollView;
-			sourceTree = "<group>";
-		};
-		3B7DC873208890F100CEEC5E /* SCScrollView */ = {
-			isa = PBXGroup;
-			children = (
-				3B7DC88C208892D800CEEC5E /* Class */,
-				3B7DC8742088910000CEEC5E /* Utils */,
-			);
-			path = SCScrollView;
-			sourceTree = "<group>";
-		};
-		3B7DC8742088910000CEEC5E /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				3B7DC8752088911B00CEEC5E /* SDCycleScrollView */,
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 		3B7DC8752088911B00CEEC5E /* SDCycleScrollView */ = {
@@ -360,15 +346,6 @@
 				3B7DC8842088911B00CEEC5E /* TAPageControl.h */,
 			);
 			path = PageControl;
-			sourceTree = "<group>";
-		};
-		3B7DC88C208892D800CEEC5E /* Class */ = {
-			isa = PBXGroup;
-			children = (
-				3B7DC88D208892EB00CEEC5E /* SCScrollView.h */,
-				3B7DC88E208892EB00CEEC5E /* SCScrollView.m */,
-			);
-			path = Class;
 			sourceTree = "<group>";
 		};
 		3B7DC8932088976400CEEC5E /* ZFPlayer */ = {
@@ -475,10 +452,20 @@
 			path = Promise;
 			sourceTree = "<group>";
 		};
+		3BFD78622092C73F00143C9F /* Swift_mix */ = {
+			isa = PBXGroup;
+			children = (
+				3BFD78642092C77C00143C9F /* SwiftViewController.swift */,
+				3BFD78652092C77C00143C9F /* SwiftViewController.xib */,
+				3BFD78632092C77C00143C9F /* TestProject-Bridging-Header.h */,
+			);
+			path = Swift_mix;
+			sourceTree = "<group>";
+		};
 		690912144E33298DDEDFDAAC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4080F506B0DBFD39BF926BFC /* libPods-TestProject.a */,
+				F74E33408DEC93B1D3B85A37 /* Pods_TestProject.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -562,6 +549,7 @@
 				TargetAttributes = {
 					3B520F18204F7380008281E5 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 					3B520F30204F7380008281E5 = {
@@ -609,6 +597,7 @@
 				3B7DC8CF2089EDB300CEEC5E /* TBTableViewCell.xib in Resources */,
 				3B7DC8722088876200CEEC5E /* TBImageCollectionViewCell.xib in Resources */,
 				3B7DC8C12088976400CEEC5E /* ZFPlayer.bundle in Resources */,
+				3BFD78672092C77C00143C9F /* SwiftViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -668,9 +657,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TestProject/Pods-TestProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -690,6 +688,7 @@
 				3B7DC8882088911B00CEEC5E /* TADotView.m in Sources */,
 				3B7DC8BC2088976400CEEC5E /* UINavigationController+ZFPlayerRotation.m in Sources */,
 				3B376ECC206A164A00566665 /* ProgressView.m in Sources */,
+				3BFD78662092C77C00143C9F /* SwiftViewController.swift in Sources */,
 				3B7DC8C32088976400CEEC5E /* ZFPlayerControlView.m in Sources */,
 				3B7DC8BE2088976400CEEC5E /* UIImageView+ZFCache.m in Sources */,
 				3B7DC8712088876200CEEC5E /* TBImageCollectionViewCell.m in Sources */,
@@ -719,7 +718,6 @@
 				3B7DC88A2088911B00CEEC5E /* TAAnimatedDotView.m in Sources */,
 				224C0B5E2088C62600A64EDE /* ScrollTestViewController.m in Sources */,
 				3B7DC8C52088976400CEEC5E /* MMMaterialDesignSpinner.m in Sources */,
-				3B7DC88F208892EB00CEEC5E /* SCScrollView.m in Sources */,
 				224C0B622088E3E500A64EDE /* TBVideoCollectionViewCell.m in Sources */,
 				3B3B77182063A74800FE9473 /* DispatchDelegate.m in Sources */,
 				3B7DC8C42088976400CEEC5E /* ZFPlayerView.m in Sources */,
@@ -870,16 +868,21 @@
 			baseConfigurationReference = 4443DE576C7BB525641756C1 /* Pods-TestProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HDA5682DHU;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = $SRCROOT/TestProject/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$SRCROOT/TestProject/PrefixHeader.pch";
 				INFOPLIST_FILE = TestProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "quanbin.jin-test.TestProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift_mix/TestProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -889,16 +892,20 @@
 			baseConfigurationReference = BD9796C37F535E9ACD5E2EB5 /* Pods-TestProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HDA5682DHU;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = $SRCROOT/TestProject/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$SRCROOT/TestProject/PrefixHeader.pch";
 				INFOPLIST_FILE = TestProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "quanbin.jin-test.TestProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift_mix/TestProject-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -906,6 +913,7 @@
 		3B520F49204F7380008281E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HDA5682DHU;
@@ -921,6 +929,7 @@
 		3B520F4A204F7380008281E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HDA5682DHU;
@@ -936,6 +945,7 @@
 		3B520F4C204F7380008281E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HDA5682DHU;
 				INFOPLIST_FILE = TestProjectUITests/Info.plist;
@@ -950,6 +960,7 @@
 		3B520F4D204F7380008281E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HDA5682DHU;
 				INFOPLIST_FILE = TestProjectUITests/Info.plist;

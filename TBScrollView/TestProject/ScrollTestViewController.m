@@ -7,7 +7,6 @@
 //
 
 #import "ScrollTestViewController.h"
-#import "SCScrollView.h"
 #import "TBScrollView.h"
 #import "TBTableViewCell.h"
 
@@ -36,24 +35,16 @@ model; \
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
     CGFloat height = [UIScreen mainScreen].bounds.size.height - 20;
     
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 20, width, height)];
-    [self.view addSubview:_tableView];
-    _tableView.delegate = self;
-    _tableView.dataSource = self;
-//    [_tableView registerNib:[UINib nibWithNibName:@"TBTableViewCell" bundle:nil] forCellReuseIdentifier:@"cell"];
-    [_tableView registerClass:[TBTableViewCell class] forCellReuseIdentifier:@"cell"];
-    _tableView.rowHeight = 200;
-    _tableView.backgroundColor = [UIColor greenColor];
+//    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 20, width, height)];
+//    [self.view addSubview:_tableView];
+//    _tableView.delegate = self;
+//    _tableView.dataSource = self;
+//    [_tableView registerClass:[TBTableViewCell class] forCellReuseIdentifier:@"cell"];
+//    _tableView.rowHeight = 200;
     
-//    TBScrollView *scrollView = [[TBScrollView alloc] initWithFrame:CGRectMake(0, 20, width, 200) dataModel:self.model];
-//    [self.view addSubview:scrollView];
-    
-    serialQueue = dispatch_queue_create("serial_queue", DISPATCH_QUEUE_SERIAL);
-    
-    
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        NSLog(@"%@\n%@", [NSThread mainThread], [NSThread currentThread]);
-    });
+    TBScrollView *scrollView = [[TBScrollView alloc] initWithFrame:CGRectMake(0, 20, width, 200) dataModel:self.model];
+    [self.view addSubview:scrollView];
+
 }
 
 - (SCScrollModel *)model {
