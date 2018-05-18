@@ -11,6 +11,7 @@
 #import "ScrollViewController.h"
 #import "ScrollTestViewController.h"
 #import "TestProject-Swift.h"
+#import "TouchActionViewController.h"
 
 @interface AppDelegate ()
 
@@ -32,7 +33,7 @@ void uncaughtExceptionHandler2(NSException *exception) {
     NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler2);
     
     self.window = [[UIWindow alloc] init];
-    self.window.rootViewController = [[ScrollTestViewController alloc] init];
+    self.window.rootViewController = [[TouchActionViewController alloc] init];
     [self.window makeKeyAndVisible];
     
     return YES;

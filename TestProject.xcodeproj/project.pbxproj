@@ -56,6 +56,9 @@
 		3B7DC8CA2089BD5100CEEC5E /* TBVideoControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC8C92089BD5100CEEC5E /* TBVideoControlView.m */; };
 		3B7DC8CE2089EDB300CEEC5E /* TBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC8CC2089EDB300CEEC5E /* TBTableViewCell.m */; };
 		3B7DC8CF2089EDB300CEEC5E /* TBTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B7DC8CD2089EDB300CEEC5E /* TBTableViewCell.xib */; };
+		3BCE038D20995B470042D39D /* H&MObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCE038C20995B470042D39D /* H&MObject.m */; };
+		3BD16B2E20AD542500B82E7E /* TouchActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD16B2C20AD542500B82E7E /* TouchActionViewController.m */; };
+		3BD16B2F20AD542500B82E7E /* TouchActionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BD16B2D20AD542500B82E7E /* TouchActionViewController.xib */; };
 		3BD860152074B7C9004E9321 /* Promise.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD860142074B7C9004E9321 /* Promise.m */; };
 		3BE0C07B205271870051D3FC /* UITableView+EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C07A205271870051D3FC /* UITableView+EmptyView.m */; };
 		3BFD78662092C77C00143C9F /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD78642092C77C00143C9F /* SwiftViewController.swift */; };
@@ -177,6 +180,12 @@
 		3B7DC8CB2089EDB300CEEC5E /* TBTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBTableViewCell.h; sourceTree = "<group>"; };
 		3B7DC8CC2089EDB300CEEC5E /* TBTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBTableViewCell.m; sourceTree = "<group>"; };
 		3B7DC8CD2089EDB300CEEC5E /* TBTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TBTableViewCell.xib; sourceTree = "<group>"; };
+		3BCE038B20995B470042D39D /* H&MObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "H&MObject.h"; sourceTree = "<group>"; };
+		3BCE038C20995B470042D39D /* H&MObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "H&MObject.m"; sourceTree = "<group>"; };
+		3BCE038E20995B780042D39D /* H&MObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "H&MObject.h"; sourceTree = "<group>"; };
+		3BD16B2B20AD542500B82E7E /* TouchActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchActionViewController.h; sourceTree = "<group>"; };
+		3BD16B2C20AD542500B82E7E /* TouchActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchActionViewController.m; sourceTree = "<group>"; };
+		3BD16B2D20AD542500B82E7E /* TouchActionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TouchActionViewController.xib; sourceTree = "<group>"; };
 		3BD860132074B7C9004E9321 /* Promise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Promise.h; sourceTree = "<group>"; };
 		3BD860142074B7C9004E9321 /* Promise.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Promise.m; sourceTree = "<group>"; };
 		3BE0C079205271870051D3FC /* UITableView+EmptyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+EmptyView.h"; sourceTree = "<group>"; };
@@ -218,6 +227,7 @@
 		3B520F10204F7380008281E5 = {
 			isa = PBXGroup;
 			children = (
+				3BCE038A20995AED0042D39D /* H&M */,
 				3BFD78622092C73F00143C9F /* Swift_mix */,
 				3B7DC86420887B1800CEEC5E /* TBScrollView */,
 				3B7DC7702087340800CEEC5E /* Utils */,
@@ -265,6 +275,7 @@
 				3B376ECD206B364900566665 /* PrefixHeader.pch */,
 				3B376ECE206B371200566665 /* Handler.h */,
 				3B376ECF206B371200566665 /* Handler.m */,
+				3BCE038E20995B780042D39D /* H&MObject.h */,
 			);
 			path = TestProject;
 			sourceTree = "<group>";
@@ -443,6 +454,18 @@
 			path = TestProject;
 			sourceTree = "<group>";
 		};
+		3BCE038A20995AED0042D39D /* H&M */ = {
+			isa = PBXGroup;
+			children = (
+				3BCE038B20995B470042D39D /* H&MObject.h */,
+				3BCE038C20995B470042D39D /* H&MObject.m */,
+				3BD16B2B20AD542500B82E7E /* TouchActionViewController.h */,
+				3BD16B2C20AD542500B82E7E /* TouchActionViewController.m */,
+				3BD16B2D20AD542500B82E7E /* TouchActionViewController.xib */,
+			);
+			path = "H&M";
+			sourceTree = "<group>";
+		};
 		3BD860122074B7AD004E9321 /* Promise */ = {
 			isa = PBXGroup;
 			children = (
@@ -595,6 +618,7 @@
 				224C0B632088E3E500A64EDE /* TBVideoCollectionViewCell.xib in Resources */,
 				3B7DC8B72088976400CEEC5E /* LICENSE in Resources */,
 				3B7DC8CF2089EDB300CEEC5E /* TBTableViewCell.xib in Resources */,
+				3BD16B2F20AD542500B82E7E /* TouchActionViewController.xib in Resources */,
 				3B7DC8722088876200CEEC5E /* TBImageCollectionViewCell.xib in Resources */,
 				3B7DC8C12088976400CEEC5E /* ZFPlayer.bundle in Resources */,
 				3BFD78672092C77C00143C9F /* SwiftViewController.xib in Resources */,
@@ -662,6 +686,7 @@
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -669,6 +694,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -688,6 +714,8 @@
 				3B7DC8882088911B00CEEC5E /* TADotView.m in Sources */,
 				3B7DC8BC2088976400CEEC5E /* UINavigationController+ZFPlayerRotation.m in Sources */,
 				3B376ECC206A164A00566665 /* ProgressView.m in Sources */,
+				3BD16B2E20AD542500B82E7E /* TouchActionViewController.m in Sources */,
+				3BCE038D20995B470042D39D /* H&MObject.m in Sources */,
 				3BFD78662092C77C00143C9F /* SwiftViewController.swift in Sources */,
 				3B7DC8C32088976400CEEC5E /* ZFPlayerControlView.m in Sources */,
 				3B7DC8BE2088976400CEEC5E /* UIImageView+ZFCache.m in Sources */,

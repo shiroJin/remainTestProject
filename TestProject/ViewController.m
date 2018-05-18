@@ -55,6 +55,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor whiteColor];
     
+    
 //    Dog *dog = [Dog new];
 //    [dog foo];
     
@@ -81,14 +82,14 @@
     }
     */
     
-    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-    flowLayout.itemSize = CGSizeMake(100, 100);
-    flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-    
-    UICollectionView *collection = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, 100, 100) collectionViewLayout:flowLayout];
-    [self.view addSubview:collection];
-    collection.delegate = self;
-    collection.dataSource = self;
+//    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+//    flowLayout.itemSize = CGSizeMake(100, 100);
+//    flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+//
+//    UICollectionView *collection = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, 100, 100) collectionViewLayout:flowLayout];
+//    [self.view addSubview:collection];
+//    collection.delegate = self;
+//    collection.dataSource = self;
     
     
 //    [[[Promise resolveOnqueue:dispatch_get_main_queue() transaction:^(Next resolve, Next reject) {
