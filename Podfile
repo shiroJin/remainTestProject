@@ -9,4 +9,6 @@ target 'TestProject' do
   pod 'SDWebImage', '~> 4.1.0'
   pod 'FLAnimatedImage', '~> 1.0.12'
   pod 'SnapKit', '3.2'
+  pod 'RxSwift'
+  pod 'RxCocoa'
 end

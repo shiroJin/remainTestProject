@@ -32,7 +32,6 @@ class SwiftViewController: UIViewController, SDCycleScrollViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     /*
     // MARK: - Navigation

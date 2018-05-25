@@ -7,6 +7,7 @@
 //
 
 #import "TouchActionViewController.h"
+#import "NotificationViewController.h"
 
 //#define onExit(btn) \
 //UIButton *button = btn; \
@@ -30,53 +31,69 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self foo];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onNotification) name:@"notification" object:nil];
+}
+
+- (void)onNotification {
+    NSLog(@"receieve notification");
 }
 
 - (IBAction)touchAction:(id)sender {
-    ((UIButton *)sender).enabled = false;
-    
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        for (int i = 0; i < 1000000; i++) {
-            @autoreleasepool {
-                __unused NSString *string = [NSString stringWithFormat:@"hello world !"];
-            }
-        }
-        dispatch_async(dispatch_get_main_queue(), ^{
-            ((UIButton *)sender).enabled = true;
-        });
-        
-        NSLog(@"hello world");
-    });
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"notification" object:nil];
 }
 
+- (IBAction)present:(UIButton *)sender {
+    NotificationViewController *target = [NotificationViewController new];
+    [self presentViewController:target animated:true completion:NULL];
+}
+
+//    ((UIButton *)sender).enabled = false;
+//
+//    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+//        for (int i = 0; i < 1000000; i++) {
+//            @autoreleasepool {
+//                __unused NSString *string = [NSString stringWithFormat:@"hello world !"];
+//            }
+//        }
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            ((UIButton *)sender).enabled = true;
+//        });
+//
+//        NSLog(@"hello world");
+//    });
+
 - (void)foo {
+    NSLog(@"%ld", sizeof(NSInteger));
+}
+
+- (void)runloopObserve {
     CFRunLoopObserverRef observer = CFRunLoopObserverCreateWithHandler(kCFAllocatorDefault, kCFRunLoopBeforeWaiting, true, 0, ^(CFRunLoopObserverRef observer, CFRunLoopActivity activity) {
         NSLog(@"beforeWaiting");
     });
     CFRunLoopAddObserver(CFRunLoopGetMain(), observer, kCFRunLoopDefaultMode);
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    NSLog(@"======");
-    dispatch_async(dispatch_get_main_queue(), ^{
-        NSLog(@"events");
-        NSLog(@"======");
-    });
-    
-    NSLog(@"======");
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        // 时间差.
-        for (int i = 0; i < 1000; i++) {
-            @autoreleasepool {
-                __unused NSString *string = [NSString stringWithFormat:@"hello world !"];
-            }
-        }
-        dispatch_async(dispatch_get_main_queue(), ^{
-            NSLog(@"events2");
-            NSLog(@"======");
-        });
-    });
-}
+//- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//    NSLog(@"======");
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        NSLog(@"events");
+//        NSLog(@"======");
+//    });
+//
+//    NSLog(@"======");
+//    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+//        // 时间差.
+//        for (int i = 0; i < 1000; i++) {
+//            @autoreleasepool {
+//                __unused NSString *string = [NSString stringWithFormat:@"hello world !"];
+//            }
+//        }
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            NSLog(@"events2");
+//            NSLog(@"======");
+//        });
+//    });
+//}
 
 
 - (void)didReceiveMemoryWarning {

@@ -29,8 +29,8 @@ void uncaughtExceptionHandler2(NSException *exception) {
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
-    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler2);
+//    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
+//    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler2);
     
     self.window = [[UIWindow alloc] init];
     self.window.rootViewController = [[TouchActionViewController alloc] init];

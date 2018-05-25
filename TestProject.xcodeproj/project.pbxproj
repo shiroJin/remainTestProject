@@ -15,6 +15,65 @@
 		3B3B77112060F80D00FE9473 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3B77102060F80D00FE9473 /* Animal.m */; };
 		3B3B77142060F83D00FE9473 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3B77132060F83D00FE9473 /* Dog.m */; };
 		3B3B77182063A74800FE9473 /* DispatchDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3B77172063A74800FE9473 /* DispatchDelegate.m */; };
+		3B4546B620B28A36000D0E66 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4546B520B28A36000D0E66 /* NotificationViewController.m */; };
+		3B45470D20B50FB7000D0E66 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3B77132060F83D00FE9473 /* Dog.m */; };
+		3B45470E20B50FB7000D0E66 /* TBVideoControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC8C92089BD5100CEEC5E /* TBVideoControlView.m */; };
+		3B45470F20B50FB7000D0E66 /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC8812088911B00CEEC5E /* TAAbstractDotView.m */; };
+		3B45471020B50FB7000D0E66 /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC87E2088911B00CEEC5E /* TADotView.m */; };
+		3B45471120B50FB7000D0E66 /* UINavigationController+ZFPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC8A52088976400CEEC5E /* UINavigationController+ZFPlayerRotation.m */; };
+		3B45471220B50FB7000D0E66 /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B376ECB206A164A00566665 /* ProgressView.m */; };
+		3B45471320B50FB7000D0E66 /* TouchActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD16B2C20AD542500B82E7E /* TouchActionViewController.m */; };
+		3B45471420B50FB7000D0E66 /* H&MObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCE038C20995B470042D39D /* H&MObject.m */; };
+		3B45471520B50FB7000D0E66 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD78642092C77C00143C9F /* SwiftViewController.swift */; };
+		3B45471620B50FB7000D0E66 /* ZFPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC8B12088976400CEEC5E /* ZFPlayerControlView.m */; };
+		3B45471720B50FB7000D0E66 /* UIImageView+ZFCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC8A72088976400CEEC5E /* UIImageView+ZFCache.m */; };
+		3B45471820B50FB7000D0E66 /* TBImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC86F2088876200CEEC5E /* TBImageCollectionViewCell.m */; };
+		3B45471920B50FB7000D0E66 /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC87B2088911B00CEEC5E /* SDCollectionViewCell.m */; };
+		3B45471A20B50FB7000D0E66 /* ScrollTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC76C208733B900CEEC5E /* ScrollTableViewCell.m */; };
+		3B45471B20B50FB7000D0E66 /* RxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD16B3120AEB5B100B82E7E /* RxViewController.swift */; };
+		3B45471C20B50FB7000D0E66 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4546B520B28A36000D0E66 /* NotificationViewController.m */; };
+		3B45471D20B50FB7000D0E66 /* TBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC8CC2089EDB300CEEC5E /* TBTableViewCell.m */; };
+		3B45471E20B50FB7000D0E66 /* UITableView+EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C07A205271870051D3FC /* UITableView+EmptyView.m */; };
+		3B45471F20B50FB7000D0E66 /* UIView+CustomControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC8A42088976400CEEC5E /* UIView+CustomControlView.m */; };
+		3B45472020B50FB7000D0E66 /* SCScrollModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC891208893F200CEEC5E /* SCScrollModel.m */; };
+		3B45472120B50FB7000D0E66 /* UIWindow+CurrentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC8A32088976400CEEC5E /* UIWindow+CurrentViewController.m */; };
+		3B45472220B50FB7000D0E66 /* Promise.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD860142074B7C9004E9321 /* Promise.m */; };
+		3B45472320B50FB7000D0E66 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC769208732E200CEEC5E /* ScrollViewController.m */; };
+		3B45472420B50FB7000D0E66 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B520F20204F7380008281E5 /* ViewController.m */; };
+		3B45472520B50FB7000D0E66 /* ASValueTrackingSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC8B52088976400CEEC5E /* ASValueTrackingSlider.m */; };
+		3B45472620B50FB7000D0E66 /* FPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC7722087342800CEEC5E /* FPSLabel.m */; };
+		3B45472720B50FB7000D0E66 /* ASValuePopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC8B02088976400CEEC5E /* ASValuePopUpView.m */; };
+		3B45472820B50FB7000D0E66 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3B77102060F80D00FE9473 /* Animal.m */; };
+		3B45472920B50FB7000D0E66 /* UIAlertController+ZFPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC8A62088976400CEEC5E /* UIAlertController+ZFPlayerRotation.m */; };
+		3B45472A20B50FB7000D0E66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B520F2B204F7380008281E5 /* main.m */; };
+		3B45472B20B50FB7000D0E66 /* UIViewController+ZFPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC8A82088976400CEEC5E /* UIViewController+ZFPlayerRotation.m */; };
+		3B45472C20B50FB7000D0E66 /* ZFPlayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC8962088976400CEEC5E /* ZFPlayerModel.m */; };
+		3B45472D20B50FB7000D0E66 /* Handler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B376ECF206B371200566665 /* Handler.m */; };
+		3B45472E20B50FB7000D0E66 /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC8792088911B00CEEC5E /* SDCycleScrollView.m */; };
+		3B45472F20B50FB7000D0E66 /* ZFBrightnessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC8AD2088976400CEEC5E /* ZFBrightnessView.m */; };
+		3B45473020B50FB7000D0E66 /* TBScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC86620887B3400CEEC5E /* TBScrollView.m */; };
+		3B45473120B50FB7000D0E66 /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC87F2088911B00CEEC5E /* TAPageControl.m */; };
+		3B45473220B50FB7000D0E66 /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC8802088911B00CEEC5E /* TAAnimatedDotView.m */; };
+		3B45473320B50FB7000D0E66 /* ScrollTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224C0B5D2088C62600A64EDE /* ScrollTestViewController.m */; };
+		3B45473420B50FB7000D0E66 /* MMMaterialDesignSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC8B32088976400CEEC5E /* MMMaterialDesignSpinner.m */; };
+		3B45473520B50FB7000D0E66 /* TBVideoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 224C0B602088E3E500A64EDE /* TBVideoCollectionViewCell.m */; };
+		3B45473620B50FB7000D0E66 /* DispatchDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3B77172063A74800FE9473 /* DispatchDelegate.m */; };
+		3B45473720B50FB7000D0E66 /* ZFPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC8B22088976400CEEC5E /* ZFPlayerView.m */; };
+		3B45473820B50FB7000D0E66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B520F1D204F7380008281E5 /* AppDelegate.m */; };
+		3B45473920B50FB7000D0E66 /* UITabBarController+ZFPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC89C2088976400CEEC5E /* UITabBarController+ZFPlayerRotation.m */; };
+		3B45473A20B50FB7000D0E66 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC87A2088911B00CEEC5E /* UIView+SDExtension.m */; };
+		3B45473C20B50FB7000D0E66 /* Pods_TestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74E33408DEC93B1D3B85A37 /* Pods_TestProject.framework */; };
+		3B45473E20B50FB7000D0E66 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3B7DC8B62088976400CEEC5E /* README.md */; };
+		3B45473F20B50FB7000D0E66 /* ScrollTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B7DC76D208733B900CEEC5E /* ScrollTableViewCell.xib */; };
+		3B45474020B50FB7000D0E66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B520F25204F7380008281E5 /* Assets.xcassets */; };
+		3B45474120B50FB7000D0E66 /* TBVideoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224C0B612088E3E500A64EDE /* TBVideoCollectionViewCell.xib */; };
+		3B45474220B50FB7000D0E66 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3B7DC8942088976400CEEC5E /* LICENSE */; };
+		3B45474320B50FB7000D0E66 /* TBTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B7DC8CD2089EDB300CEEC5E /* TBTableViewCell.xib */; };
+		3B45474420B50FB7000D0E66 /* RxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BD16B3220AEB5B100B82E7E /* RxViewController.xib */; };
+		3B45474520B50FB7000D0E66 /* TouchActionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BD16B2D20AD542500B82E7E /* TouchActionViewController.xib */; };
+		3B45474620B50FB7000D0E66 /* TBImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B7DC8702088876200CEEC5E /* TBImageCollectionViewCell.xib */; };
+		3B45474720B50FB7000D0E66 /* ZFPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3B7DC8AE2088976400CEEC5E /* ZFPlayer.bundle */; };
+		3B45474820B50FB7000D0E66 /* SwiftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BFD78652092C77C00143C9F /* SwiftViewController.xib */; };
 		3B520F1E204F7380008281E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B520F1D204F7380008281E5 /* AppDelegate.m */; };
 		3B520F21204F7380008281E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B520F20204F7380008281E5 /* ViewController.m */; };
 		3B520F26204F7380008281E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B520F25204F7380008281E5 /* Assets.xcassets */; };
@@ -59,6 +118,8 @@
 		3BCE038D20995B470042D39D /* H&MObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCE038C20995B470042D39D /* H&MObject.m */; };
 		3BD16B2E20AD542500B82E7E /* TouchActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD16B2C20AD542500B82E7E /* TouchActionViewController.m */; };
 		3BD16B2F20AD542500B82E7E /* TouchActionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BD16B2D20AD542500B82E7E /* TouchActionViewController.xib */; };
+		3BD16B3320AEB5B100B82E7E /* RxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD16B3120AEB5B100B82E7E /* RxViewController.swift */; };
+		3BD16B3420AEB5B100B82E7E /* RxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BD16B3220AEB5B100B82E7E /* RxViewController.xib */; };
 		3BD860152074B7C9004E9321 /* Promise.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD860142074B7C9004E9321 /* Promise.m */; };
 		3BE0C07B205271870051D3FC /* UITableView+EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C07A205271870051D3FC /* UITableView+EmptyView.m */; };
 		3BFD78662092C77C00143C9F /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD78642092C77C00143C9F /* SwiftViewController.swift */; };
@@ -100,6 +161,10 @@
 		3B3B77132060F83D00FE9473 /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 		3B3B77162063A74800FE9473 /* DispatchDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchDelegate.h; sourceTree = "<group>"; };
 		3B3B77172063A74800FE9473 /* DispatchDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchDelegate.m; sourceTree = "<group>"; };
+		3B4546B420B28A36000D0E66 /* NotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
+		3B4546B520B28A36000D0E66 /* NotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
+		3B45474E20B50FB7000D0E66 /* TestProject2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B45474F20B50FB7000D0E66 /* TestProject copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TestProject copy-Info.plist"; path = "/Users/remain/Desktop/测试工程/remainTestProject/TestProject copy-Info.plist"; sourceTree = "<absolute>"; };
 		3B520F19204F7380008281E5 /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B520F1C204F7380008281E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3B520F1D204F7380008281E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -186,6 +251,8 @@
 		3BD16B2B20AD542500B82E7E /* TouchActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchActionViewController.h; sourceTree = "<group>"; };
 		3BD16B2C20AD542500B82E7E /* TouchActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchActionViewController.m; sourceTree = "<group>"; };
 		3BD16B2D20AD542500B82E7E /* TouchActionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TouchActionViewController.xib; sourceTree = "<group>"; };
+		3BD16B3120AEB5B100B82E7E /* RxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxViewController.swift; sourceTree = "<group>"; };
+		3BD16B3220AEB5B100B82E7E /* RxViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxViewController.xib; sourceTree = "<group>"; };
 		3BD860132074B7C9004E9321 /* Promise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Promise.h; sourceTree = "<group>"; };
 		3BD860142074B7C9004E9321 /* Promise.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Promise.m; sourceTree = "<group>"; };
 		3BE0C079205271870051D3FC /* UITableView+EmptyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+EmptyView.h"; sourceTree = "<group>"; };
@@ -199,6 +266,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3B45473B20B50FB7000D0E66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B45473C20B50FB7000D0E66 /* Pods_TestProject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3B520F16204F7380008281E5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -224,9 +299,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B4546B320B274F8000D0E66 /* NotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				3B4546B420B28A36000D0E66 /* NotificationViewController.h */,
+				3B4546B520B28A36000D0E66 /* NotificationViewController.m */,
+			);
+			path = NotificationCenter;
+			sourceTree = "<group>";
+		};
 		3B520F10204F7380008281E5 = {
 			isa = PBXGroup;
 			children = (
+				3B4546B320B274F8000D0E66 /* NotificationCenter */,
+				3BD16B3020AEB58900B82E7E /* RxSwift */,
 				3BCE038A20995AED0042D39D /* H&M */,
 				3BFD78622092C73F00143C9F /* Swift_mix */,
 				3B7DC86420887B1800CEEC5E /* TBScrollView */,
@@ -239,6 +325,7 @@
 				3B520F1A204F7380008281E5 /* Products */,
 				A57A1E5B83381D6F798B16FB /* Pods */,
 				690912144E33298DDEDFDAAC /* Frameworks */,
+				3B45474F20B50FB7000D0E66 /* TestProject copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -248,6 +335,7 @@
 				3B520F19204F7380008281E5 /* TestProject.app */,
 				3B520F31204F7380008281E5 /* TestProjectTests.xctest */,
 				3B520F3C204F7380008281E5 /* TestProjectUITests.xctest */,
+				3B45474E20B50FB7000D0E66 /* TestProject2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -466,6 +554,15 @@
 			path = "H&M";
 			sourceTree = "<group>";
 		};
+		3BD16B3020AEB58900B82E7E /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				3BD16B3120AEB5B100B82E7E /* RxViewController.swift */,
+				3BD16B3220AEB5B100B82E7E /* RxViewController.xib */,
+			);
+			path = RxSwift;
+			sourceTree = "<group>";
+		};
 		3BD860122074B7AD004E9321 /* Promise */ = {
 			isa = PBXGroup;
 			children = (
@@ -505,6 +602,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3B45470A20B50FB7000D0E66 /* TestProject2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B45474B20B50FB7000D0E66 /* Build configuration list for PBXNativeTarget "TestProject2" */;
+			buildPhases = (
+				3B45470B20B50FB7000D0E66 /* [CP] Check Pods Manifest.lock */,
+				3B45470C20B50FB7000D0E66 /* Sources */,
+				3B45473B20B50FB7000D0E66 /* Frameworks */,
+				3B45473D20B50FB7000D0E66 /* Resources */,
+				3B45474920B50FB7000D0E66 /* [CP] Embed Pods Frameworks */,
+				3B45474A20B50FB7000D0E66 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestProject2;
+			productName = TestProject;
+			productReference = 3B45474E20B50FB7000D0E66 /* TestProject2.app */;
+			productType = "com.apple.product-type.application";
+		};
 		3B520F18204F7380008281E5 /* TestProject */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B520F45204F7380008281E5 /* Build configuration list for PBXNativeTarget "TestProject" */;
@@ -570,6 +687,9 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = remain;
 				TargetAttributes = {
+					3B45470A20B50FB7000D0E66 = {
+						ProvisioningStyle = Automatic;
+					};
 					3B520F18204F7380008281E5 = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 0930;
@@ -603,11 +723,30 @@
 				3B520F18204F7380008281E5 /* TestProject */,
 				3B520F30204F7380008281E5 /* TestProjectTests */,
 				3B520F3B204F7380008281E5 /* TestProjectUITests */,
+				3B45470A20B50FB7000D0E66 /* TestProject2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3B45473D20B50FB7000D0E66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B45473E20B50FB7000D0E66 /* README.md in Resources */,
+				3B45473F20B50FB7000D0E66 /* ScrollTableViewCell.xib in Resources */,
+				3B45474020B50FB7000D0E66 /* Assets.xcassets in Resources */,
+				3B45474120B50FB7000D0E66 /* TBVideoCollectionViewCell.xib in Resources */,
+				3B45474220B50FB7000D0E66 /* LICENSE in Resources */,
+				3B45474320B50FB7000D0E66 /* TBTableViewCell.xib in Resources */,
+				3B45474420B50FB7000D0E66 /* RxViewController.xib in Resources */,
+				3B45474520B50FB7000D0E66 /* TouchActionViewController.xib in Resources */,
+				3B45474620B50FB7000D0E66 /* TBImageCollectionViewCell.xib in Resources */,
+				3B45474720B50FB7000D0E66 /* ZFPlayer.bundle in Resources */,
+				3B45474820B50FB7000D0E66 /* SwiftViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3B520F17204F7380008281E5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -618,6 +757,7 @@
 				224C0B632088E3E500A64EDE /* TBVideoCollectionViewCell.xib in Resources */,
 				3B7DC8B72088976400CEEC5E /* LICENSE in Resources */,
 				3B7DC8CF2089EDB300CEEC5E /* TBTableViewCell.xib in Resources */,
+				3BD16B3420AEB5B100B82E7E /* RxViewController.xib in Resources */,
 				3BD16B2F20AD542500B82E7E /* TouchActionViewController.xib in Resources */,
 				3B7DC8722088876200CEEC5E /* TBImageCollectionViewCell.xib in Resources */,
 				3B7DC8C12088976400CEEC5E /* ZFPlayer.bundle in Resources */,
@@ -642,6 +782,69 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3B45470B20B50FB7000D0E66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B45474920B50FB7000D0E66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TestProject/Pods-TestProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestProject/Pods-TestProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B45474A20B50FB7000D0E66 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestProject/Pods-TestProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5E9920D0271D39CDB2545B69 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -685,6 +888,8 @@
 				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
@@ -693,6 +898,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
@@ -704,6 +911,59 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3B45470C20B50FB7000D0E66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B45470D20B50FB7000D0E66 /* Dog.m in Sources */,
+				3B45470E20B50FB7000D0E66 /* TBVideoControlView.m in Sources */,
+				3B45470F20B50FB7000D0E66 /* TAAbstractDotView.m in Sources */,
+				3B45471020B50FB7000D0E66 /* TADotView.m in Sources */,
+				3B45471120B50FB7000D0E66 /* UINavigationController+ZFPlayerRotation.m in Sources */,
+				3B45471220B50FB7000D0E66 /* ProgressView.m in Sources */,
+				3B45471320B50FB7000D0E66 /* TouchActionViewController.m in Sources */,
+				3B45471420B50FB7000D0E66 /* H&MObject.m in Sources */,
+				3B45471520B50FB7000D0E66 /* SwiftViewController.swift in Sources */,
+				3B45471620B50FB7000D0E66 /* ZFPlayerControlView.m in Sources */,
+				3B45471720B50FB7000D0E66 /* UIImageView+ZFCache.m in Sources */,
+				3B45471820B50FB7000D0E66 /* TBImageCollectionViewCell.m in Sources */,
+				3B45471920B50FB7000D0E66 /* SDCollectionViewCell.m in Sources */,
+				3B45471A20B50FB7000D0E66 /* ScrollTableViewCell.m in Sources */,
+				3B45471B20B50FB7000D0E66 /* RxViewController.swift in Sources */,
+				3B45471C20B50FB7000D0E66 /* NotificationViewController.m in Sources */,
+				3B45471D20B50FB7000D0E66 /* TBTableViewCell.m in Sources */,
+				3B45471E20B50FB7000D0E66 /* UITableView+EmptyView.m in Sources */,
+				3B45471F20B50FB7000D0E66 /* UIView+CustomControlView.m in Sources */,
+				3B45472020B50FB7000D0E66 /* SCScrollModel.m in Sources */,
+				3B45472120B50FB7000D0E66 /* UIWindow+CurrentViewController.m in Sources */,
+				3B45472220B50FB7000D0E66 /* Promise.m in Sources */,
+				3B45472320B50FB7000D0E66 /* ScrollViewController.m in Sources */,
+				3B45472420B50FB7000D0E66 /* ViewController.m in Sources */,
+				3B45472520B50FB7000D0E66 /* ASValueTrackingSlider.m in Sources */,
+				3B45472620B50FB7000D0E66 /* FPSLabel.m in Sources */,
+				3B45472720B50FB7000D0E66 /* ASValuePopUpView.m in Sources */,
+				3B45472820B50FB7000D0E66 /* Animal.m in Sources */,
+				3B45472920B50FB7000D0E66 /* UIAlertController+ZFPlayerRotation.m in Sources */,
+				3B45472A20B50FB7000D0E66 /* main.m in Sources */,
+				3B45472B20B50FB7000D0E66 /* UIViewController+ZFPlayerRotation.m in Sources */,
+				3B45472C20B50FB7000D0E66 /* ZFPlayerModel.m in Sources */,
+				3B45472D20B50FB7000D0E66 /* Handler.m in Sources */,
+				3B45472E20B50FB7000D0E66 /* SDCycleScrollView.m in Sources */,
+				3B45472F20B50FB7000D0E66 /* ZFBrightnessView.m in Sources */,
+				3B45473020B50FB7000D0E66 /* TBScrollView.m in Sources */,
+				3B45473120B50FB7000D0E66 /* TAPageControl.m in Sources */,
+				3B45473220B50FB7000D0E66 /* TAAnimatedDotView.m in Sources */,
+				3B45473320B50FB7000D0E66 /* ScrollTestViewController.m in Sources */,
+				3B45473420B50FB7000D0E66 /* MMMaterialDesignSpinner.m in Sources */,
+				3B45473520B50FB7000D0E66 /* TBVideoCollectionViewCell.m in Sources */,
+				3B45473620B50FB7000D0E66 /* DispatchDelegate.m in Sources */,
+				3B45473720B50FB7000D0E66 /* ZFPlayerView.m in Sources */,
+				3B45473820B50FB7000D0E66 /* AppDelegate.m in Sources */,
+				3B45473920B50FB7000D0E66 /* UITabBarController+ZFPlayerRotation.m in Sources */,
+				3B45473A20B50FB7000D0E66 /* UIView+SDExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3B520F15204F7380008281E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -722,6 +982,8 @@
 				3B7DC8712088876200CEEC5E /* TBImageCollectionViewCell.m in Sources */,
 				3B7DC8872088911B00CEEC5E /* SDCollectionViewCell.m in Sources */,
 				3B7DC76E208733B900CEEC5E /* ScrollTableViewCell.m in Sources */,
+				3BD16B3320AEB5B100B82E7E /* RxViewController.swift in Sources */,
+				3B4546B620B28A36000D0E66 /* NotificationViewController.m in Sources */,
 				3B7DC8CE2089EDB300CEEC5E /* TBTableViewCell.m in Sources */,
 				3BE0C07B205271870051D3FC /* UITableView+EmptyView.m in Sources */,
 				3B7DC8BB2088976400CEEC5E /* UIView+CustomControlView.m in Sources */,
@@ -787,6 +1049,53 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		3B45474C20B50FB7000D0E66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4443DE576C7BB525641756C1 /* Pods-TestProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = HDA5682DHU;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/TestProject/PrefixHeader.pch;
+				INFOPLIST_FILE = "TestProject copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "quanbin.jin-test.TestProject";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift_mix/TestProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B45474D20B50FB7000D0E66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD9796C37F535E9ACD5E2EB5 /* Pods-TestProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = HDA5682DHU;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/TestProject/PrefixHeader.pch;
+				INFOPLIST_FILE = "TestProject copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "quanbin.jin-test.TestProject";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift_mix/TestProject-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		3B520F43204F7380008281E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -902,7 +1211,7 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HDA5682DHU;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$SRCROOT/TestProject/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = $SRCROOT/TestProject/PrefixHeader.pch;
 				INFOPLIST_FILE = TestProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -926,7 +1235,7 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HDA5682DHU;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$SRCROOT/TestProject/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = $SRCROOT/TestProject/PrefixHeader.pch;
 				INFOPLIST_FILE = TestProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1003,6 +1312,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3B45474B20B50FB7000D0E66 /* Build configuration list for PBXNativeTarget "TestProject2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B45474C20B50FB7000D0E66 /* Debug */,
+				3B45474D20B50FB7000D0E66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3B520F14204F7380008281E5 /* Build configuration list for PBXProject "TestProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -20,15 +20,30 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIC-gF-BKp">
-                    <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
+                    <rect key="frame" x="163.5" y="318.5" width="48" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Action"/>
                     <connections>
                         <action selector="touchAction:" destination="-1" eventType="touchUpInside" id="LcM-0c-T1C"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHZ-M8-LPs">
+                    <rect key="frame" x="157" y="264" width="60" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="THF-aj-BUJ"/>
+                        <constraint firstAttribute="width" constant="60" id="TcR-KU-Rqa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Present"/>
+                    <connections>
+                        <action selector="present:" destination="-1" eventType="touchUpInside" id="YoE-1i-x9E"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="kHZ-M8-LPs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7Du-w9-epa"/>
+                <constraint firstItem="mIC-gF-BKp" firstAttribute="top" secondItem="kHZ-M8-LPs" secondAttribute="bottom" constant="24.5" id="FJK-cJ-mJc"/>
                 <constraint firstItem="mIC-gF-BKp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="aAn-pm-PbS"/>
                 <constraint firstItem="mIC-gF-BKp" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="qTn-36-QZC"/>
             </constraints>
