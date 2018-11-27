@@ -16,6 +16,7 @@
 #import "Promise.h"
 #import "Masonry.h"
 #import <objc/runtime.h>
+#import "DurationViewController.h"
 
 @interface SCLinkNode : NSObject
 
@@ -204,6 +205,21 @@
 //            NSLog(@"%@", thr);
 //        });
 //    }
+    
+    
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    DurationViewController *vc = [DurationViewController new];
+    [self presentViewController:vc animated:YES completion:NULL];
+    
+    __block NSTimeInterval start = [[NSDate date] timeIntervalSince1970];
+    [[vc rac_signalForSelector:@selector(viewWillDisappear:)] subscribeNext:^(RACTuple * _Nullable x) {
+        NSTimeInterval current = [[NSDate date] timeIntervalSince1970];
+        NSTimeInterval duration = current - start;
+        NSLog(@"%lf", duration);
+        start = current;
+    }];
 }
 
 - (void)threadTest {

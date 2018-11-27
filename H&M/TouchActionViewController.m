@@ -8,6 +8,8 @@
 
 #import "TouchActionViewController.h"
 #import "NotificationViewController.h"
+#import "HitTestView.h"
+
 
 //#define onExit(btn) \
 //UIButton *button = btn; \
@@ -30,21 +32,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self foo];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onNotification) name:@"notification" object:nil];
+    
+    [self runloopObserve];
 }
 
 - (void)onNotification {
     NSLog(@"receieve notification");
 }
 
-- (IBAction)touchAction:(id)sender {
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"notification" object:nil];
+- (IBAction)touchAction:(UIButton *)sender {
+    [self exampleOfSubmitConfig];
 }
 
 - (IBAction)present:(UIButton *)sender {
-    NotificationViewController *target = [NotificationViewController new];
-    [self presentViewController:target animated:true completion:NULL];
 }
 
 //    ((UIButton *)sender).enabled = false;
@@ -67,34 +67,35 @@
 }
 
 - (void)runloopObserve {
-    CFRunLoopObserverRef observer = CFRunLoopObserverCreateWithHandler(kCFAllocatorDefault, kCFRunLoopBeforeWaiting, true, 0, ^(CFRunLoopObserverRef observer, CFRunLoopActivity activity) {
-        NSLog(@"beforeWaiting");
+    CFRunLoopObserverRef observer = CFRunLoopObserverCreateWithHandler(kCFAllocatorDefault, kCFRunLoopAfterWaiting | kCFRunLoopBeforeWaiting, true, 0, ^(CFRunLoopObserverRef observer, CFRunLoopActivity activity) {
+        if (activity & kCFRunLoopBeforeWaiting) {
+            NSLog(@"runloop before waiting");
+        } else {
+            NSLog(@"runloop after waiting");
+        }
     });
     CFRunLoopAddObserver(CFRunLoopGetMain(), observer, kCFRunLoopDefaultMode);
 }
 
-//- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-//    NSLog(@"======");
-//    dispatch_async(dispatch_get_main_queue(), ^{
-//        NSLog(@"events");
-//        NSLog(@"======");
-//    });
-//
-//    NSLog(@"======");
-//    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-//        // 时间差.
-//        for (int i = 0; i < 1000; i++) {
-//            @autoreleasepool {
-//                __unused NSString *string = [NSString stringWithFormat:@"hello world !"];
-//            }
-//        }
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            NSLog(@"events2");
-//            NSLog(@"======");
-//        });
-//    });
-//}
+- (void)exampleOfSubmitConfig {
+    NSLog(@"ui");
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSLog(@"events");
+    });
+}
 
+/**
+ *  int类型转化二进制数据
+ **/
+- (void)exampleOfIntToData {
+    int number = -4;
+    Byte bytes[4];
+    for (int i = 0; i < 4; i++) {
+        bytes[i] = (number >> 8 * (3 - i)) & 0xFF;
+    }
+    NSData *data = [NSData dataWithBytes:bytes length:4];
+    NSLog(@"%@", data);
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

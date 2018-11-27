@@ -12,6 +12,9 @@
 #import "ScrollTestViewController.h"
 #import "TestProject-Swift.h"
 #import "TouchActionViewController.h"
+#import "NotificationViewController.h"
+#import "FDViewController.h"
+#import "MJRefreshViewController.h"
 
 @interface AppDelegate ()
 
@@ -33,7 +36,7 @@ void uncaughtExceptionHandler2(NSException *exception) {
 //    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler2);
     
     self.window = [[UIWindow alloc] init];
-    self.window.rootViewController = [[TouchActionViewController alloc] init];
+    self.window.rootViewController = [[MJRefreshViewController alloc] init];
     [self.window makeKeyAndVisible];
     
     return YES;

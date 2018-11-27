@@ -1,13 +1,8 @@
 PODS:
   - FLAnimatedImage (1.0.12)
   - Masonry (1.1.0)
-  - ReactiveCocoa (2.3.1):
-    - ReactiveCocoa/UI (= 2.3.1)
-  - ReactiveCocoa/Core (2.3.1):
-    - ReactiveCocoa/no-arc
-  - ReactiveCocoa/no-arc (2.3.1)
-  - ReactiveCocoa/UI (2.3.1):
-    - ReactiveCocoa/Core
+  - MJRefresh (3.1.15.3)
+  - ReactiveObjC (3.0.0)
   - RxCocoa (4.1.2):
     - RxSwift (~> 4.0)
   - RxSwift (4.1.2)
@@ -15,25 +10,51 @@ PODS:
     - SDWebImage/Core (= 4.1.0)
   - SDWebImage/Core (4.1.0)
   - SnapKit (3.2.0)
+  - "UITableView+FDTemplateLayoutCell (1.5.1)"
 
 DEPENDENCIES:
   - FLAnimatedImage (~> 1.0.12)
   - Masonry
-  - ReactiveCocoa (~> 2.3.1)
+  - MJRefresh
+  - ReactiveObjC (~> 3.0.0)
   - RxCocoa
   - RxSwift
   - SDWebImage (~> 4.1.0)
   - SnapKit (= 3.2)
+  - "UITableView+FDTemplateLayoutCell (from `http://git.uama.com.cn:8888/libs/FDTemplate.git`, tag `1.5.1`)"
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FLAnimatedImage
+    - Masonry
+    - MJRefresh
+    - ReactiveObjC
+    - RxCocoa
+    - RxSwift
+    - SDWebImage
+    - SnapKit
+
+EXTERNAL SOURCES:
+  "UITableView+FDTemplateLayoutCell":
+    :git: http://git.uama.com.cn:8888/libs/FDTemplate.git
+    :tag: 1.5.1
+
+CHECKOUT OPTIONS:
+  "UITableView+FDTemplateLayoutCell":
+    :git: http://git.uama.com.cn:8888/libs/FDTemplate.git
+    :tag: 1.5.1
 
 SPEC CHECKSUMS:
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  ReactiveCocoa: 3fe9b233ca6db810e86681b5749488564c1179a1
+  MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
   RxSwift: e49536837d9901277638493ea537394d4b55f570
   SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  "UITableView+FDTemplateLayoutCell": fd832cb4b5d998f34823641307aada8d5446d739
 
-PODFILE CHECKSUM: bb8ae710782a4302ed9283147bf0c776c68488c6
+PODFILE CHECKSUM: 93582ec9ea2ef507b9c826fd0739be6bfe8cf32c
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.3

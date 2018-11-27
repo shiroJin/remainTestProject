@@ -62,7 +62,6 @@
 		3B45473820B50FB7000D0E66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B520F1D204F7380008281E5 /* AppDelegate.m */; };
 		3B45473920B50FB7000D0E66 /* UITabBarController+ZFPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC89C2088976400CEEC5E /* UITabBarController+ZFPlayerRotation.m */; };
 		3B45473A20B50FB7000D0E66 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC87A2088911B00CEEC5E /* UIView+SDExtension.m */; };
-		3B45473C20B50FB7000D0E66 /* Pods_TestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74E33408DEC93B1D3B85A37 /* Pods_TestProject.framework */; };
 		3B45473E20B50FB7000D0E66 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3B7DC8B62088976400CEEC5E /* README.md */; };
 		3B45473F20B50FB7000D0E66 /* ScrollTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B7DC76D208733B900CEEC5E /* ScrollTableViewCell.xib */; };
 		3B45474020B50FB7000D0E66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B520F25204F7380008281E5 /* Assets.xcassets */; };
@@ -80,6 +79,8 @@
 		3B520F2C204F7380008281E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B520F2B204F7380008281E5 /* main.m */; };
 		3B520F36204F7380008281E5 /* TestProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B520F35204F7380008281E5 /* TestProjectTests.m */; };
 		3B520F41204F7380008281E5 /* TestProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B520F40204F7380008281E5 /* TestProjectUITests.m */; };
+		3B59B92121196DEA000B2616 /* DurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B59B92021196DEA000B2616 /* DurationViewController.m */; };
+		3B60482F21357B6B00E20A98 /* MJRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B60482E21357B6B00E20A98 /* MJRefreshViewController.m */; };
 		3B7DC76A208732E200CEEC5E /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC769208732E200CEEC5E /* ScrollViewController.m */; };
 		3B7DC76E208733B900CEEC5E /* ScrollTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC76C208733B900CEEC5E /* ScrollTableViewCell.m */; };
 		3B7DC76F208733B900CEEC5E /* ScrollTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B7DC76D208733B900CEEC5E /* ScrollTableViewCell.xib */; };
@@ -115,6 +116,12 @@
 		3B7DC8CA2089BD5100CEEC5E /* TBVideoControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC8C92089BD5100CEEC5E /* TBVideoControlView.m */; };
 		3B7DC8CE2089EDB300CEEC5E /* TBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DC8CC2089EDB300CEEC5E /* TBTableViewCell.m */; };
 		3B7DC8CF2089EDB300CEEC5E /* TBTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B7DC8CD2089EDB300CEEC5E /* TBTableViewCell.xib */; };
+		3B920E7620D8C83700C4A0EF /* FDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B920E7420D8C83700C4A0EF /* FDViewController.m */; };
+		3B920E7720D8C83700C4A0EF /* FDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B920E7520D8C83700C4A0EF /* FDViewController.xib */; };
+		3B920E7B20D8C98B00C4A0EF /* FDTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B920E7920D8C98B00C4A0EF /* FDTableViewCell.m */; };
+		3B920E7C20D8C98B00C4A0EF /* FDTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B920E7A20D8C98B00C4A0EF /* FDTableViewCell.xib */; };
+		3BA77D3220BE7BEB00F95DBC /* HitTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA77D3120BE7BEB00F95DBC /* HitTestView.m */; };
+		3BB94134215B34DE0034C6C9 /* bounds.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB94133215B34DE0034C6C9 /* bounds.m */; };
 		3BCE038D20995B470042D39D /* H&MObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCE038C20995B470042D39D /* H&MObject.m */; };
 		3BD16B2E20AD542500B82E7E /* TouchActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD16B2C20AD542500B82E7E /* TouchActionViewController.m */; };
 		3BD16B2F20AD542500B82E7E /* TouchActionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BD16B2D20AD542500B82E7E /* TouchActionViewController.xib */; };
@@ -124,6 +131,7 @@
 		3BE0C07B205271870051D3FC /* UITableView+EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C07A205271870051D3FC /* UITableView+EmptyView.m */; };
 		3BFD78662092C77C00143C9F /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD78642092C77C00143C9F /* SwiftViewController.swift */; };
 		3BFD78672092C77C00143C9F /* SwiftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BFD78652092C77C00143C9F /* SwiftViewController.xib */; };
+		76CE15D465E0D7A8B6DF6F94 /* Pods_TestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74E33408DEC93B1D3B85A37 /* Pods_TestProject.framework */; };
 		99509D4652E306EEB3B57D52 /* Pods_TestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74E33408DEC93B1D3B85A37 /* Pods_TestProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -145,6 +153,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FBD997D70F3F8A57EE82258 /* Pods-TestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestProject/Pods-TestProject.release.xcconfig"; sourceTree = "<group>"; };
 		224C0B5C2088C62600A64EDE /* ScrollTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollTestViewController.h; sourceTree = "<group>"; };
 		224C0B5D2088C62600A64EDE /* ScrollTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollTestViewController.m; sourceTree = "<group>"; };
 		224C0B5F2088E3E500A64EDE /* TBVideoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBVideoCollectionViewCell.h; sourceTree = "<group>"; };
@@ -179,6 +188,10 @@
 		3B520F3C204F7380008281E5 /* TestProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B520F40204F7380008281E5 /* TestProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestProjectUITests.m; sourceTree = "<group>"; };
 		3B520F42204F7380008281E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B59B91F21196DEA000B2616 /* DurationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DurationViewController.h; sourceTree = "<group>"; };
+		3B59B92021196DEA000B2616 /* DurationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DurationViewController.m; sourceTree = "<group>"; };
+		3B60482D21357B6B00E20A98 /* MJRefreshViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRefreshViewController.h; sourceTree = "<group>"; };
+		3B60482E21357B6B00E20A98 /* MJRefreshViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRefreshViewController.m; sourceTree = "<group>"; };
 		3B7DC768208732E200CEEC5E /* ScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
 		3B7DC769208732E200CEEC5E /* ScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
 		3B7DC76B208733B900CEEC5E /* ScrollTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollTableViewCell.h; sourceTree = "<group>"; };
@@ -245,6 +258,16 @@
 		3B7DC8CB2089EDB300CEEC5E /* TBTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBTableViewCell.h; sourceTree = "<group>"; };
 		3B7DC8CC2089EDB300CEEC5E /* TBTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBTableViewCell.m; sourceTree = "<group>"; };
 		3B7DC8CD2089EDB300CEEC5E /* TBTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TBTableViewCell.xib; sourceTree = "<group>"; };
+		3B920E7320D8C83700C4A0EF /* FDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDViewController.h; sourceTree = "<group>"; };
+		3B920E7420D8C83700C4A0EF /* FDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDViewController.m; sourceTree = "<group>"; };
+		3B920E7520D8C83700C4A0EF /* FDViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FDViewController.xib; sourceTree = "<group>"; };
+		3B920E7820D8C98B00C4A0EF /* FDTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDTableViewCell.h; sourceTree = "<group>"; };
+		3B920E7920D8C98B00C4A0EF /* FDTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDTableViewCell.m; sourceTree = "<group>"; };
+		3B920E7A20D8C98B00C4A0EF /* FDTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FDTableViewCell.xib; sourceTree = "<group>"; };
+		3BA77D3020BE7BEB00F95DBC /* HitTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HitTestView.h; sourceTree = "<group>"; };
+		3BA77D3120BE7BEB00F95DBC /* HitTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HitTestView.m; sourceTree = "<group>"; };
+		3BB94132215B34DE0034C6C9 /* bounds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bounds.h; sourceTree = "<group>"; };
+		3BB94133215B34DE0034C6C9 /* bounds.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bounds.m; sourceTree = "<group>"; };
 		3BCE038B20995B470042D39D /* H&MObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "H&MObject.h"; sourceTree = "<group>"; };
 		3BCE038C20995B470042D39D /* H&MObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "H&MObject.m"; sourceTree = "<group>"; };
 		3BCE038E20995B780042D39D /* H&MObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "H&MObject.h"; sourceTree = "<group>"; };
@@ -260,8 +283,7 @@
 		3BFD78632092C77C00143C9F /* TestProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestProject-Bridging-Header.h"; sourceTree = "<group>"; };
 		3BFD78642092C77C00143C9F /* SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
 		3BFD78652092C77C00143C9F /* SwiftViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwiftViewController.xib; sourceTree = "<group>"; };
-		4443DE576C7BB525641756C1 /* Pods-TestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestProject/Pods-TestProject.debug.xcconfig"; sourceTree = "<group>"; };
-		BD9796C37F535E9ACD5E2EB5 /* Pods-TestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestProject/Pods-TestProject.release.xcconfig"; sourceTree = "<group>"; };
+		EF129D00619ABDA94F088C61 /* Pods-TestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestProject/Pods-TestProject.debug.xcconfig"; sourceTree = "<group>"; };
 		F74E33408DEC93B1D3B85A37 /* Pods_TestProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -270,7 +292,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B45473C20B50FB7000D0E66 /* Pods_TestProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99509D4652E306EEB3B57D52 /* Pods_TestProject.framework in Frameworks */,
+				76CE15D465E0D7A8B6DF6F94 /* Pods_TestProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +333,7 @@
 		3B520F10204F7380008281E5 = {
 			isa = PBXGroup;
 			children = (
+				3B920E7220D8C78400C4A0EF /* FDTemplateCellLayout */,
 				3B4546B320B274F8000D0E66 /* NotificationCenter */,
 				3BD16B3020AEB58900B82E7E /* RxSwift */,
 				3BCE038A20995AED0042D39D /* H&M */,
@@ -364,6 +387,12 @@
 				3B376ECE206B371200566665 /* Handler.h */,
 				3B376ECF206B371200566665 /* Handler.m */,
 				3BCE038E20995B780042D39D /* H&MObject.h */,
+				3B59B91F21196DEA000B2616 /* DurationViewController.h */,
+				3B59B92021196DEA000B2616 /* DurationViewController.m */,
+				3B60482D21357B6B00E20A98 /* MJRefreshViewController.h */,
+				3B60482E21357B6B00E20A98 /* MJRefreshViewController.m */,
+				3BB94132215B34DE0034C6C9 /* bounds.h */,
+				3BB94133215B34DE0034C6C9 /* bounds.m */,
 			);
 			path = TestProject;
 			sourceTree = "<group>";
@@ -542,6 +571,19 @@
 			path = TestProject;
 			sourceTree = "<group>";
 		};
+		3B920E7220D8C78400C4A0EF /* FDTemplateCellLayout */ = {
+			isa = PBXGroup;
+			children = (
+				3B920E7320D8C83700C4A0EF /* FDViewController.h */,
+				3B920E7420D8C83700C4A0EF /* FDViewController.m */,
+				3B920E7520D8C83700C4A0EF /* FDViewController.xib */,
+				3B920E7820D8C98B00C4A0EF /* FDTableViewCell.h */,
+				3B920E7920D8C98B00C4A0EF /* FDTableViewCell.m */,
+				3B920E7A20D8C98B00C4A0EF /* FDTableViewCell.xib */,
+			);
+			path = FDTemplateCellLayout;
+			sourceTree = "<group>";
+		};
 		3BCE038A20995AED0042D39D /* H&M */ = {
 			isa = PBXGroup;
 			children = (
@@ -550,6 +592,8 @@
 				3BD16B2B20AD542500B82E7E /* TouchActionViewController.h */,
 				3BD16B2C20AD542500B82E7E /* TouchActionViewController.m */,
 				3BD16B2D20AD542500B82E7E /* TouchActionViewController.xib */,
+				3BA77D3020BE7BEB00F95DBC /* HitTestView.h */,
+				3BA77D3120BE7BEB00F95DBC /* HitTestView.m */,
 			);
 			path = "H&M";
 			sourceTree = "<group>";
@@ -593,8 +637,8 @@
 		A57A1E5B83381D6F798B16FB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4443DE576C7BB525641756C1 /* Pods-TestProject.debug.xcconfig */,
-				BD9796C37F535E9ACD5E2EB5 /* Pods-TestProject.release.xcconfig */,
+				EF129D00619ABDA94F088C61 /* Pods-TestProject.debug.xcconfig */,
+				1FBD997D70F3F8A57EE82258 /* Pods-TestProject.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -606,12 +650,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B45474B20B50FB7000D0E66 /* Build configuration list for PBXNativeTarget "TestProject2" */;
 			buildPhases = (
-				3B45470B20B50FB7000D0E66 /* [CP] Check Pods Manifest.lock */,
 				3B45470C20B50FB7000D0E66 /* Sources */,
 				3B45473B20B50FB7000D0E66 /* Frameworks */,
 				3B45473D20B50FB7000D0E66 /* Resources */,
-				3B45474920B50FB7000D0E66 /* [CP] Embed Pods Frameworks */,
-				3B45474A20B50FB7000D0E66 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -631,7 +672,6 @@
 				3B520F16204F7380008281E5 /* Frameworks */,
 				3B520F17204F7380008281E5 /* Resources */,
 				700BDD3AF6E074D19F310276 /* [CP] Embed Pods Frameworks */,
-				6976E9C6D6E34E46A5FFBBB1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -757,11 +797,13 @@
 				224C0B632088E3E500A64EDE /* TBVideoCollectionViewCell.xib in Resources */,
 				3B7DC8B72088976400CEEC5E /* LICENSE in Resources */,
 				3B7DC8CF2089EDB300CEEC5E /* TBTableViewCell.xib in Resources */,
+				3B920E7720D8C83700C4A0EF /* FDViewController.xib in Resources */,
 				3BD16B3420AEB5B100B82E7E /* RxViewController.xib in Resources */,
 				3BD16B2F20AD542500B82E7E /* TouchActionViewController.xib in Resources */,
 				3B7DC8722088876200CEEC5E /* TBImageCollectionViewCell.xib in Resources */,
 				3B7DC8C12088976400CEEC5E /* ZFPlayer.bundle in Resources */,
 				3BFD78672092C77C00143C9F /* SwiftViewController.xib in Resources */,
+				3B920E7C20D8C98B00C4A0EF /* FDTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -782,69 +824,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3B45470B20B50FB7000D0E66 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TestProject-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3B45474920B50FB7000D0E66 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TestProject/Pods-TestProject-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
-				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
-				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestProject/Pods-TestProject-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3B45474A20B50FB7000D0E66 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestProject/Pods-TestProject-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5E9920D0271D39CDB2545B69 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -863,21 +842,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6976E9C6D6E34E46A5FFBBB1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestProject/Pods-TestProject-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		700BDD3AF6E074D19F310276 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -886,22 +850,26 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TestProject/Pods-TestProject-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
-				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/UITableView+FDTemplateLayoutCell/UITableView_FDTemplateLayoutCell.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UITableView_FDTemplateLayoutCell.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -972,13 +940,17 @@
 				3B7DC8CA2089BD5100CEEC5E /* TBVideoControlView.m in Sources */,
 				3B7DC88B2088911B00CEEC5E /* TAAbstractDotView.m in Sources */,
 				3B7DC8882088911B00CEEC5E /* TADotView.m in Sources */,
+				3BA77D3220BE7BEB00F95DBC /* HitTestView.m in Sources */,
 				3B7DC8BC2088976400CEEC5E /* UINavigationController+ZFPlayerRotation.m in Sources */,
+				3B60482F21357B6B00E20A98 /* MJRefreshViewController.m in Sources */,
 				3B376ECC206A164A00566665 /* ProgressView.m in Sources */,
 				3BD16B2E20AD542500B82E7E /* TouchActionViewController.m in Sources */,
+				3B59B92121196DEA000B2616 /* DurationViewController.m in Sources */,
 				3BCE038D20995B470042D39D /* H&MObject.m in Sources */,
 				3BFD78662092C77C00143C9F /* SwiftViewController.swift in Sources */,
 				3B7DC8C32088976400CEEC5E /* ZFPlayerControlView.m in Sources */,
 				3B7DC8BE2088976400CEEC5E /* UIImageView+ZFCache.m in Sources */,
+				3B920E7B20D8C98B00C4A0EF /* FDTableViewCell.m in Sources */,
 				3B7DC8712088876200CEEC5E /* TBImageCollectionViewCell.m in Sources */,
 				3B7DC8872088911B00CEEC5E /* SDCollectionViewCell.m in Sources */,
 				3B7DC76E208733B900CEEC5E /* ScrollTableViewCell.m in Sources */,
@@ -1005,6 +977,7 @@
 				3B7DC8C02088976400CEEC5E /* ZFBrightnessView.m in Sources */,
 				3B7DC86720887B3400CEEC5E /* TBScrollView.m in Sources */,
 				3B7DC8892088911B00CEEC5E /* TAPageControl.m in Sources */,
+				3B920E7620D8C83700C4A0EF /* FDViewController.m in Sources */,
 				3B7DC88A2088911B00CEEC5E /* TAAnimatedDotView.m in Sources */,
 				224C0B5E2088C62600A64EDE /* ScrollTestViewController.m in Sources */,
 				3B7DC8C52088976400CEEC5E /* MMMaterialDesignSpinner.m in Sources */,
@@ -1013,6 +986,7 @@
 				3B7DC8C42088976400CEEC5E /* ZFPlayerView.m in Sources */,
 				3B520F1E204F7380008281E5 /* AppDelegate.m in Sources */,
 				3B7DC8B92088976400CEEC5E /* UITabBarController+ZFPlayerRotation.m in Sources */,
+				3BB94134215B34DE0034C6C9 /* bounds.m in Sources */,
 				3B7DC8862088911B00CEEC5E /* UIView+SDExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1051,7 +1025,6 @@
 /* Begin XCBuildConfiguration section */
 		3B45474C20B50FB7000D0E66 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4443DE576C7BB525641756C1 /* Pods-TestProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1075,7 +1048,6 @@
 		};
 		3B45474D20B50FB7000D0E66 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD9796C37F535E9ACD5E2EB5 /* Pods-TestProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1202,7 +1174,7 @@
 		};
 		3B520F46204F7380008281E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4443DE576C7BB525641756C1 /* Pods-TestProject.debug.xcconfig */;
+			baseConfigurationReference = EF129D00619ABDA94F088C61 /* Pods-TestProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1226,7 +1198,7 @@
 		};
 		3B520F47204F7380008281E5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD9796C37F535E9ACD5E2EB5 /* Pods-TestProject.release.xcconfig */;
+			baseConfigurationReference = 1FBD997D70F3F8A57EE82258 /* Pods-TestProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
